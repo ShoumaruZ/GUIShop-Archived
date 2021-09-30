@@ -39,7 +39,6 @@ public class ShopCommand extends Command {
         menu.setMainCategory(menu.getCategory("main"));
         menu.setDoubleChest();
         menu.show(player);
-        menu.openCategory("main", player);
         return true;
     }
     

@@ -11,7 +11,7 @@ import ru.ragnok123.menuAPI.inventory.InventoryMenu;
 import ru.ragnok123.menuAPI.inventory.item.ItemClick;
 import ru.ragnok123.menuAPI.inventory.item.ItemData;
 
-public class Category extends ItemClick {
+public class Category extends ShopTrait {
 
 
     /*		
@@ -24,15 +24,6 @@ public class Category extends ItemClick {
 	 *    5 x x x x x x x x x
      *   (y)
 	 */
-
-    
-    /**
-     * ===============
-     * TYPE: CATEGORY
-     * 
-     * タップして開く
-     * ===============
-     */
 
 
     /**
@@ -71,18 +62,15 @@ public class Category extends ItemClick {
      * @param inventory_menu
      */
     public Category(String id, Item item, Map<Integer, ItemClick> contents, InventoryMenu inventory_menu) {
+        for(int i = 0; i < SHOP_SIZE; i++) this.inventory_category.addElement(i, ItemData.fromItem(SPACE_ITEM));
         inventory_menu.addCategory(id, this.inventory_category);
         this.inventory_category.menu = inventory_menu;
         this.contents = contents;
         this.id = id;
         this.item = item;
-        this.item.setCustomName(this.item.getName());
         this.item.setLore(
-            "§f===============",
-            "§bType§f: CATEGORY",
             "",
-            "§cタップして開く",
-            "§f==============="
+            "§dタップして開く"
         );
     }
 
@@ -138,7 +126,6 @@ public class Category extends ItemClick {
      * @param player
      */
     public void show(Player player) {
-        for(int i = 0; i < SHOP_SIZE; i++) this.inventory_category.addElement(i, ItemData.fromItem(SPACE_ITEM));
         this.inventory_category.getMenu().openCategory(this.getId(), player);
     }
 
@@ -147,6 +134,25 @@ public class Category extends ItemClick {
     public void onClick(Player player, Item item) {
         this.show(player);
     }
+
+
+    /**
+     * インスタンスをMapに変換します
+     */
+    @Override
+    public Map<String, Object> toMap() {
+        return null;
+    }
+
+
+    /**
+     * Mapをインスタンスに変換します
+     */
+    @Override
+    public ShopTrait fromMap() {
+        return null;
+    }
+
 
 
 }
