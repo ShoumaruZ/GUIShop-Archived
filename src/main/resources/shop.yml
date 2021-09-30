@@ -1,0 +1,16 @@
+slot:
+  type: CATEGORY
+  name: テストカテゴリ
+  contents:
+    12:
+      type: ITEM
+      item: 2:0:1
+      price: 150:100
+
+# SLOT:
+#   TYPE: CATEGORY
+#   CONTENTS:
+#     SLOT:
+#       TYPE: CONTENT
+#       ITEM:
+#       PRICE:
