@@ -1,5 +1,6 @@
 package fishnetwork.guishop.element;
 
+import java.util.HashMap;
 import java.util.Map;
 
 import cn.nukkit.Player;
@@ -11,7 +12,7 @@ import ru.ragnok123.menuAPI.inventory.InventoryMenu;
 import ru.ragnok123.menuAPI.inventory.item.ItemClick;
 import ru.ragnok123.menuAPI.inventory.item.ItemData;
 
-public class Category extends ShopTrait {
+public class Category extends ItemClick {
 
 
     /*		
@@ -42,7 +43,7 @@ public class Category extends ShopTrait {
 
 
     /** @var ItemClick[int] */
-    private Map<Integer, ItemClick> contents;
+    private Map<Integer, ItemClick> contents = new HashMap<Integer, ItemClick>();
 
 
     /** @var Item */
@@ -61,11 +62,10 @@ public class Category extends ShopTrait {
      * @param contents
      * @param inventory_menu
      */
-    public Category(String id, Item item, Map<Integer, ItemClick> contents, InventoryMenu inventory_menu) {
+    public Category(String id, Item item, InventoryMenu inventory_menu) {
         for(int i = 0; i < SHOP_SIZE; i++) this.inventory_category.addElement(i, ItemData.fromItem(SPACE_ITEM));
         inventory_menu.addCategory(id, this.inventory_category);
         this.inventory_category.menu = inventory_menu;
-        this.contents = contents;
         this.id = id;
         this.item = item;
         this.item.setLore(
@@ -130,29 +130,19 @@ public class Category extends ShopTrait {
     }
 
 
+    /**
+     * InventoryCategoryを取得します
+     * @return
+     */
+    public InventoryCategory getInventoryCategory() {
+        return this.inventory_category;
+    }
+
+
     @Override
     public void onClick(Player player, Item item) {
         this.show(player);
     }
-
-
-    /**
-     * インスタンスをMapに変換します
-     */
-    @Override
-    public Map<String, Object> toMap() {
-        return null;
-    }
-
-
-    /**
-     * Mapをインスタンスに変換します
-     */
-    @Override
-    public ShopTrait fromMap() {
-        return null;
-    }
-
 
 
 }

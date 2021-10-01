@@ -1,12 +1,11 @@
 package fishnetwork.guishop.element;
 
-import java.util.Map;
-
 import cn.nukkit.Player;
 import cn.nukkit.item.Item;
 import fishnetwork.guishop.from.TransactionForm;
+import ru.ragnok123.menuAPI.inventory.item.ItemClick;
 
-public class Content extends ShopTrait {
+public class Content extends ItemClick {
 
 
     /** Price Type */
@@ -20,8 +19,8 @@ public class Content extends ShopTrait {
     private int[] price;
 
 
-    public Content(Item item, int[] price) {
-        this.price = price;
+    public Content(Item item, int buy, int sell) {
+        this.price = new int[]{buy, sell};
         this.item = item;
         this.item.setLore(
             "",
@@ -46,24 +45,6 @@ public class Content extends ShopTrait {
     @Override
     public void onClick(Player player, Item item) {
         TransactionForm.sendForm(player, this);
-    }
-
-
-    /**
-     * インスタンスをMapに変換します
-     */
-    @Override
-    public Map<String, Object> toMap() {
-        return null;
-    }
-
-
-    /**
-     * Mapをインスタンスに変換します
-     */
-    @Override
-    public ShopTrait fromMap() {
-        return null;
     }
 
 
