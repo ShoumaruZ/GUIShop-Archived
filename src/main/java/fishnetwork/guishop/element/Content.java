@@ -1,8 +1,11 @@
 package fishnetwork.guishop.element;
 
 import cn.nukkit.Player;
+import cn.nukkit.Server;
 import cn.nukkit.item.Item;
+import fishnetwork.guishop.Main;
 import fishnetwork.guishop.from.TransactionForm;
+import ru.ragnok123.menuAPI.inventory.InventoryMenuHandler;
 import ru.ragnok123.menuAPI.inventory.item.ItemClick;
 
 public class Content extends ItemClick {
@@ -44,7 +47,10 @@ public class Content extends ItemClick {
 
     @Override
     public void onClick(Player player, Item item) {
-        TransactionForm.sendForm(player, this);
+        InventoryMenuHandler.getMenuByPlayer(player.getUniqueId()).forceDestroy(player);
+        Server.getInstance().getScheduler().scheduleDelayedTask(Main.getInstance(), () -> {
+            TransactionForm.sendForm(player, this);
+        }, 10);
     }
 
 

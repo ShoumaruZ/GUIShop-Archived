@@ -15,8 +15,10 @@ repositories {
 }
 
 dependencies{
-    compileOnly("ru.ragnok123", "menuAPI", "1.0")
     compileOnly("org.powernukkit", "powernukkit", "1.5.1.0-PN")
+    compileOnly("me.onebone", "economyapi", "1.0.0")
+    compileOnly("ru.nukkitx", "FormAPI", "1.0.9")
+    compileOnly("ru.ragnok123", "menuAPI", "1.0")
 }
 
 tasks{
