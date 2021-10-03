@@ -154,7 +154,7 @@ public class MainShop {
     private static final Content ANDESITE_STONE = new Content(Item.getBlock(BlockID.STONE, BlockStone.ANDESITE), 10, 5);
     private static final Content SAND_STONE = new Content(Item.getBlock(BlockID.SANDSTONE), 10, 5);
     private static final Content RED_SAND_STONE = new Content(Item.getBlock(BlockID.RED_SANDSTONE), 10, 5);
-    private static final Content GLASS = new Content(Item.getBlock(BlockID.GLASS), 20, 10);
+    private static final Content GLASS = new Content(Item.getBlock(BlockID.GLASS), 20, 15);
     private static final Content BRICKS = new Content(Item.getBlock(BlockID.BRICKS), 30, 15);
     private static final Content SMOOTH_STONE = new Content(Item.getBlock(BlockID.SMOOTH_STONE), 15, 10);
     private static final Content OBSIDIAN = new Content(Item.getBlock(BlockID.OBSIDIAN), 50, 30);
