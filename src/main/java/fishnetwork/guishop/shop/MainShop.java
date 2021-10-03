@@ -254,22 +254,22 @@ public class MainShop {
 
 
     /** Dye Category */
-    private static final Content WHITE_DYE = new Content(Item.get(ItemID.DYE, DyeColor.WHITE.getItemDyeMeta()), 30, 15);
-    private static final Content LIGHT_GRAY_DYE = new Content(Item.get(ItemID.DYE, DyeColor.LIGHT_GRAY.getItemDyeMeta()), 30, 15);
-    private static final Content GRAY_DYE = new Content(Item.get(ItemID.DYE, DyeColor.GRAY.getItemDyeMeta()), 30, 15);
-    private static final Content BLACK_DYE = new Content(Item.get(ItemID.DYE, DyeColor.BLACK.getItemDyeMeta()), 30, 15);
-    private static final Content BROWN_DYE = new Content(Item.get(ItemID.DYE, DyeColor.BROWN.getItemDyeMeta()), 30, 15);
-    private static final Content RED_DYE = new Content(Item.get(ItemID.DYE, DyeColor.RED.getItemDyeMeta()), 30, 15);
-    private static final Content ORANGE_DYE = new Content(Item.get(ItemID.DYE, DyeColor.ORANGE.getItemDyeMeta()), 30, 15);
-    private static final Content YELLOW_DYE = new Content(Item.get(ItemID.DYE, DyeColor.YELLOW.getItemDyeMeta()), 30, 15);
-    private static final Content LIME_DYE = new Content(Item.get(ItemID.DYE, DyeColor.LIME.getItemDyeMeta()), 30, 15);
-    private static final Content GREEN_DYE = new Content(Item.get(ItemID.DYE, DyeColor.GREEN.getItemDyeMeta()), 30, 15);
-    private static final Content CYAN_DYE = new Content(Item.get(ItemID.DYE, DyeColor.CYAN.getItemDyeMeta()), 30, 15);
-    private static final Content LIGHT_BLUE_DYE = new Content(Item.get(ItemID.DYE, DyeColor.LIGHT_BLUE.getItemDyeMeta()), 30, 15);
-    private static final Content BLUE_DYE = new Content(Item.get(ItemID.DYE, DyeColor.BLUE.getItemDyeMeta()), 30, 15);
-    private static final Content PURPLE_DYE = new Content(Item.get(ItemID.DYE, DyeColor.PURPLE.getItemDyeMeta()), 30, 15);
-    private static final Content MAGENTA_DYE = new Content(Item.get(ItemID.DYE, DyeColor.MAGENTA.getItemDyeMeta()), 30, 15);
-    private static final Content PINK_DYE = new Content(Item.get(ItemID.DYE, DyeColor.PINK.getItemDyeMeta()), 30, 15);
+    private static final Content WHITE_DYE = new Content(Item.get(ItemID.DYE, DyeColor.WHITE.getItemDyeMeta()), 25, 5);
+    private static final Content LIGHT_GRAY_DYE = new Content(Item.get(ItemID.DYE, DyeColor.LIGHT_GRAY.getItemDyeMeta()), 25, 5);
+    private static final Content GRAY_DYE = new Content(Item.get(ItemID.DYE, DyeColor.GRAY.getItemDyeMeta()), 25, 5);
+    private static final Content BLACK_DYE = new Content(Item.get(ItemID.DYE, DyeColor.BLACK.getItemDyeMeta()), 25, 5);
+    private static final Content BROWN_DYE = new Content(Item.get(ItemID.DYE, DyeColor.BROWN.getItemDyeMeta()), 25, 5);
+    private static final Content RED_DYE = new Content(Item.get(ItemID.DYE, DyeColor.RED.getItemDyeMeta()), 25, 5);
+    private static final Content ORANGE_DYE = new Content(Item.get(ItemID.DYE, DyeColor.ORANGE.getItemDyeMeta()), 25, 5);
+    private static final Content YELLOW_DYE = new Content(Item.get(ItemID.DYE, DyeColor.YELLOW.getItemDyeMeta()), 25, 5);
+    private static final Content LIME_DYE = new Content(Item.get(ItemID.DYE, DyeColor.LIME.getItemDyeMeta()), 25, 5);
+    private static final Content GREEN_DYE = new Content(Item.get(ItemID.DYE, DyeColor.GREEN.getItemDyeMeta()), 25, 5);
+    private static final Content CYAN_DYE = new Content(Item.get(ItemID.DYE, DyeColor.CYAN.getItemDyeMeta()), 25, 5);
+    private static final Content LIGHT_BLUE_DYE = new Content(Item.get(ItemID.DYE, DyeColor.LIGHT_BLUE.getItemDyeMeta()), 25, 5);
+    private static final Content BLUE_DYE = new Content(Item.get(ItemID.DYE, DyeColor.BLUE.getItemDyeMeta()), 25, 5);
+    private static final Content PURPLE_DYE = new Content(Item.get(ItemID.DYE, DyeColor.PURPLE.getItemDyeMeta()), 25, 5);
+    private static final Content MAGENTA_DYE = new Content(Item.get(ItemID.DYE, DyeColor.MAGENTA.getItemDyeMeta()), 25, 5);
+    private static final Content PINK_DYE = new Content(Item.get(ItemID.DYE, DyeColor.PINK.getItemDyeMeta()), 25, 5);
 
 
     private static final Category ORE_SHOP = new Category("ore", Item.get(ItemID.DIAMOND).setCustomName("§b鉱石"), MENU);
