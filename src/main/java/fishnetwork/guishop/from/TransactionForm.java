@@ -52,7 +52,7 @@ public class TransactionForm {
                     player.sendMessage("§7[§bSHOP§7] §cアイテムが§f不足§cしています");
                     return;
                 }
-                economy.addMoney(player, amount * amount);
+                economy.addMoney(player, amount * price);
                 player.getInventory().removeItem(Item.get(item.getId(), item.getDamage(), amount));
                 player.sendMessage("§7[§bSHOP§7] §f"+item.getName()+"§bを"+amount+"個売却しました(§e$"+amount * price+"§b)");
             }else{
