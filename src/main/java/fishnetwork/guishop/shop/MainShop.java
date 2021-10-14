@@ -272,45 +272,41 @@ public class MainShop {
     private static final Content PINK_DYE = new Content(Item.get(ItemID.DYE, DyeColor.PINK.getItemDyeMeta()), 25, 5);
 
 
-    private static final Category ORE_SHOP = new Category("ore", Item.get(ItemID.DIAMOND).setCustomName("§b鉱石"), MENU);
+    private static final Category ORE_SHOP = new Category("ore", Item.get(ItemID.DIAMOND).setCustomName("§b鉱石"));
 
-    private static final Category FARM_SHOP = new Category("farm", Item.get(ItemID.WHEAT).setCustomName("§b農業"), MENU);
+    private static final Category FARM_SHOP = new Category("farm", Item.get(ItemID.WHEAT).setCustomName("§b農業"));
 
-    private static final Category FOOD_SHOP = new Category("food", Item.get(ItemID.COOKED_CHICKEN).setCustomName("§b食料"), MENU);
+    private static final Category FOOD_SHOP = new Category("food", Item.get(ItemID.COOKED_CHICKEN).setCustomName("§b食料"));
 
-    private static final Category TOOL_SHOP = new Category("tool", Item.get(ItemID.DIAMOND_SWORD).setCustomName("§b武器&道具"), MENU);
+    private static final Category TOOL_SHOP = new Category("tool", Item.get(ItemID.DIAMOND_SWORD).setCustomName("§b武器&道具"));
 
-    private static final Category BLOCK_SHOP = new Category("block", Item.getBlock(BlockID.GRASS).setCustomName("§bブロック"), MENU);
+    private static final Category BLOCK_SHOP = new Category("block", Item.getBlock(BlockID.GRASS).setCustomName("§bブロック"));
 
-    private static final Category BLOCK_WOOD_SHOP = new Category("block_wood", Item.getBlock(BlockID.WOOD, BlockWood.OAK).setCustomName("§b原木類"), MENU);
+    private static final Category BLOCK_WOOD_SHOP = new Category("block_wood", Item.getBlock(BlockID.WOOD, BlockWood.OAK).setCustomName("§b原木類"));
 
-    private static final Category BLOCK_STONE_SHOP = new Category("block_stone", Item.getBlock(BlockID.STONE).setCustomName("§b石類"), MENU);
+    private static final Category BLOCK_STONE_SHOP = new Category("block_stone", Item.getBlock(BlockID.STONE).setCustomName("§b石類"));
 
-    private static final Category BLOCK_DIRT_SHOP = new Category("block_dirt", Item.getBlock(BlockID.GRASS).setCustomName("§b土類"), MENU);
+    private static final Category BLOCK_DIRT_SHOP = new Category("block_dirt", Item.getBlock(BlockID.GRASS).setCustomName("§b土類"));
 
-    private static final Category BLOCK_WOOL_SHOP = new Category("block_wool", Item.getBlock(BlockID.WOOL).setCustomName("§b羊毛"), MENU);
+    private static final Category BLOCK_WOOL_SHOP = new Category("block_wool", Item.getBlock(BlockID.WOOL).setCustomName("§b羊毛"));
 
-    private static final Category BLOCK_SEA_SHOP = new Category("block_sea", Item.getBlock(BlockID.SEA_LANTERN).setCustomName("§b海洋系"), MENU);
+    private static final Category BLOCK_SEA_SHOP = new Category("block_sea", Item.getBlock(BlockID.SEA_LANTERN).setCustomName("§b海洋系"));
 
-    private static final Category BLOCK_CORAL_SHOP = new Category("block_coral", Item.getBlock(BlockID.CORAL, BlockCoral.TYPE_FIRE).setCustomName("§bサンゴ"), MENU);
+    private static final Category BLOCK_CORAL_SHOP = new Category("block_coral", Item.getBlock(BlockID.CORAL, BlockCoral.TYPE_FIRE).setCustomName("§bサンゴ"));
 
-    private static final Category BLOCK_NETHER_SHOP = new Category("block_nether", Item.getBlock(BlockID.MAGMA).setCustomName("§bネザー系"), MENU);
+    private static final Category BLOCK_NETHER_SHOP = new Category("block_nether", Item.getBlock(BlockID.MAGMA).setCustomName("§bネザー系"));
 
-    private static final Category BLOCK_END_SHOP = new Category("block_end", Item.getBlock(BlockID.END_STONE).setCustomName("§bエンド系"), MENU);
+    private static final Category BLOCK_END_SHOP = new Category("block_end", Item.getBlock(BlockID.END_STONE).setCustomName("§bエンド系"));
 
-    private static final Category DYE_SHOP = new Category("dye", Item.get(ItemID.DYE, DyeColor.WHITE.getItemDyeMeta()).setCustomName("§b染料"), MENU);
+    private static final Category DYE_SHOP = new Category("dye", Item.get(ItemID.DYE, DyeColor.WHITE.getItemDyeMeta()).setCustomName("§b染料"));
 
-    private static final Category ARMOR_SHOP = new Category("armor", Item.get(ItemID.DIAMOND_CHESTPLATE).setCustomName("§b防具&その他"), MENU);
+    private static final Category ARMOR_SHOP = new Category("armor", Item.get(ItemID.DIAMOND_CHESTPLATE).setCustomName("§b防具&その他"));
 
-    private static final Category MAIN_SHOP = new Category("main", Item.get(ItemID.COMPASS).setCustomName("§bメインに戻る"), MENU);
+    private static final Category MAIN_SHOP = new Category("main", Item.get(ItemID.COMPASS).setCustomName("§bメインに戻る"));
 
 
 
     static {
-
-        MENU.setDoubleChest();
-        MENU.setName("Main-Shop");
-        MENU.setMainCategory(MAIN_SHOP.getInventoryCategory());
 
         ORE_SHOP
         .addContent(1, 1, COAL)
@@ -583,6 +579,26 @@ public class MainShop {
         .addCategory(1, 3, FARM_SHOP)
         .addCategory(3, 3, FOOD_SHOP);
 
+        MENU.setDoubleChest();
+        MENU.setName("Main-Shop");
+        MENU.setMainCategory(MAIN_SHOP.getInventoryCategory());
+        MENU.addCategory(MAIN_SHOP.getId(), MAIN_SHOP.getInventoryCategory());
+        MENU.addCategory(ORE_SHOP.getId(), ORE_SHOP.getInventoryCategory());
+        MENU.addCategory(FARM_SHOP.getId(), FARM_SHOP.getInventoryCategory());
+        MENU.addCategory(FOOD_SHOP.getId(), FOOD_SHOP.getInventoryCategory());
+        MENU.addCategory(TOOL_SHOP.getId(), TOOL_SHOP.getInventoryCategory());
+        MENU.addCategory(BLOCK_SHOP.getId(), BLOCK_SHOP.getInventoryCategory());
+        MENU.addCategory(BLOCK_WOOD_SHOP.getId(), BLOCK_WOOD_SHOP.getInventoryCategory());
+        MENU.addCategory(BLOCK_STONE_SHOP.getId(), BLOCK_STONE_SHOP.getInventoryCategory());
+        MENU.addCategory(BLOCK_DIRT_SHOP.getId(), BLOCK_DIRT_SHOP.getInventoryCategory());
+        MENU.addCategory(BLOCK_WOOL_SHOP.getId(), BLOCK_WOOL_SHOP.getInventoryCategory());
+        MENU.addCategory(BLOCK_SEA_SHOP.getId(), BLOCK_SEA_SHOP.getInventoryCategory());
+        MENU.addCategory(BLOCK_CORAL_SHOP.getId(), BLOCK_CORAL_SHOP.getInventoryCategory());
+        MENU.addCategory(BLOCK_NETHER_SHOP.getId(), BLOCK_NETHER_SHOP.getInventoryCategory());
+        MENU.addCategory(BLOCK_END_SHOP.getId(), BLOCK_END_SHOP.getInventoryCategory());
+        MENU.addCategory(DYE_SHOP.getId(), DYE_SHOP.getInventoryCategory());
+        MENU.addCategory(ARMOR_SHOP.getId(), ARMOR_SHOP.getInventoryCategory());
+        
     }
 
 

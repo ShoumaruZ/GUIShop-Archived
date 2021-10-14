@@ -8,7 +8,6 @@ import cn.nukkit.block.BlockID;
 import cn.nukkit.item.Item;
 import cn.nukkit.utils.DyeColor;
 import ru.ragnok123.menuAPI.inventory.InventoryCategory;
-import ru.ragnok123.menuAPI.inventory.InventoryMenu;
 import ru.ragnok123.menuAPI.inventory.item.ItemClick;
 import ru.ragnok123.menuAPI.inventory.item.ItemData;
 
@@ -62,10 +61,8 @@ public class Category extends ItemClick {
      * @param contents
      * @param inventory_menu
      */
-    public Category(String id, Item item, InventoryMenu inventory_menu) {
+    public Category(String id, Item item) {
         for(int i = 0; i < SHOP_SIZE; i++) this.inventory_category.addElement(i, ItemData.fromItem(SPACE_ITEM));
-        inventory_menu.addCategory(id, this.inventory_category);
-        this.inventory_category.menu = inventory_menu;
         this.id = id;
         this.item = item;
         this.item.setLore(
