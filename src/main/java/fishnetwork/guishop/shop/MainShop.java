@@ -231,7 +231,7 @@ public class MainShop {
     private static final Content BASALT = new Content(Item.getBlock(BlockID.BASALT), 30, 15);
     private static final Content BLACKSTONE = new Content(Item.getBlock(BlockID.BLACKSTONE), 30, 15);
     private static final Content GLIDED_BLACKSTONE = new Content(Item.getBlock(BlockID.GILDED_BLACKSTONE), 35, 20);
-    private static final Content NETHER_GOLD_ORE = new Content(Item.getBlock(BlockID.NETHER_GOLD_ORE), 35, 20);
+    private static final Content NETHER_GOLD_ORE = new Content(Item.getBlock(BlockID.NETHER_GOLD_ORE), 500, 250);
     private static final Content CRYING_OBSIDIAN = new Content(Item.getBlock(BlockID.CRYING_OBSIDIAN), 50, 25);
     private static final Content SHROOMLIGHT = new Content(Item.getBlock(BlockID.SHROOMLIGHT), 50, 25);
     private static final Content CRIMSON_STEM = new Content(Item.getBlock(BlockID.CRIMSON_STEM), 30, 15);
