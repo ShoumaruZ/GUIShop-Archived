@@ -3,6 +3,7 @@ package fishnetwork.guishop.from;
 import cn.nukkit.Player;
 import cn.nukkit.item.Item;
 import fishnetwork.guishop.element.Content;
+import fishnetwork.guishop.language.Lang;
 import me.onebone.economyapi.EconomyAPI;
 import ru.nukkitx.forms.elements.CustomForm;
 
@@ -20,9 +21,8 @@ public class TransactionForm {
         .addLabel(
             "§7アイテム§f: "+item.getName()+" - "+item.getId()+":"+item.getDamage()+"\n"+
             "§7個数§f: ×"+item.getCount()+"\n"+
-            "§7価格§f: \n"+
-            " §f- §7購入§f: §e$"+content.getPrice(Content.BUY_PRICE)+"\n"+
-            " §f- §7売却§f: §e$"+content.getPrice(Content.SELL_PRICE)
+            "§7購入§f: §e$"+content.getBuy()+"\n"+
+            "§7売却§f: §e$"+content.getSell()
         )
         .addToggle("購入 / 売却", false)
         .addToggle("全て売却する", false)
@@ -32,41 +32,41 @@ public class TransactionForm {
             EconomyAPI economy = EconomyAPI.getInstance();
             if((boolean)data.get(ALL_SELL)) {
                 int amount = 0;
-                int price = content.getPrice(Content.SELL_PRICE);
+                int price = content.getSell();
                 for(Item contents: player.getInventory().getContents().values()) {
                     if(contents.equals(Item.get(item.getId(), item.getDamage()))) amount += contents.getCount();
                 }
                 economy.addMoney(player, amount * price);
                 player.getInventory().removeItem(Item.get(item.getId(), item.getDamage(), amount));
-                player.sendMessage("§7[§bSHOP§7] §f"+item.getName()+"§bを"+amount+"個売却しました(§e$"+amount * price+"§b)");
+                player.sendMessage(Lang.get("prefix")+Lang.get("item_transaction", item.getName(), amount, "売却", amount * price));
                 return;
             }
             if(!data.get(AMOUNT).toString().matches("[0-9]+")) {
-                player.sendMessage("§7[§bSHOP§7] §c正しい数値を§f入力§cしてください");
+                player.sendMessage(Lang.get("prefix")+Lang.get("invalid_value"));
                 return;
             }
             int amount = Integer.parseInt(data.get(AMOUNT).toString());
-            int price = content.getPrice((boolean)data.get(TYPE) ? Content.SELL_PRICE : Content.BUY_PRICE);
+            int price = (boolean)data.get(TYPE) ? content.getSell() : content.getBuy();
             if((boolean)data.get(TYPE)) {
                 if(!player.getInventory().contains(Item.get(item.getId(), item.getDamage(), amount))) {
-                    player.sendMessage("§7[§bSHOP§7] §cアイテムが§f不足§cしています");
+                    player.sendMessage(Lang.get("prefix")+Lang.get("insufficient_error", "アイテム"));
                     return;
                 }
                 economy.addMoney(player, amount * price);
                 player.getInventory().removeItem(Item.get(item.getId(), item.getDamage(), amount));
-                player.sendMessage("§7[§bSHOP§7] §f"+item.getName()+"§bを"+amount+"個売却しました(§e$"+amount * price+"§b)");
+                player.sendMessage(Lang.get("prefix")+Lang.get("item_transaction", item.getName(), amount, "売却", amount * price));
             }else{
                 if(amount * price > economy.myMoney(player)) {
-                    player.sendMessage("§7[§bSHOP§7] §c所持金が§f不足§cしています"); 
+                    player.sendMessage(Lang.get("prefix")+Lang.get("insufficient_error", "所持金"));
                     return;
                 }
                 if(!player.getInventory().canAddItem(Item.get(item.getId(), item.getDamage(), amount))) {
-                    player.sendMessage("§7[§bSHOP§7] §cインベントリの空きが§f不足§cしています");
+                    player.sendMessage(Lang.get("prefix")+Lang.get("insufficient_error", "インベントリの空き"));
                     return;
                 }
                 economy.reduceMoney(player, amount * price);
                 player.getInventory().addItem(Item.get(item.getId(), item.getDamage(), amount));
-                player.sendMessage("§7[§bSHOP§7] §f"+item.getName()+"§bを"+amount+"個購入しました(§e$"+amount * price+"§b)");
+                player.sendMessage(Lang.get("prefix")+Lang.get("item_transaction", item.getName(), amount, "購入", amount * price));
             }
         });
     }

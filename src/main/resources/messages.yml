@@ -1,3 +1,7 @@
 prefix: "§7» §3Shop §7| "
 
-buy:
+item_transaction: "§f%0§bを§f%1§b個§f%2§bしました(§e$%3§b)"
+
+in_server_command: "§cゲーム内で使用してください"
+invalid_value: "§c正しい数値を入力してください"
+insufficient_error: "§f%0§cが不足しています"

@@ -11,37 +11,39 @@ import ru.ragnok123.menuAPI.inventory.item.ItemClick;
 public class Content extends ItemClick {
 
 
-    /** Price Type */
-    public final static int BUY_PRICE = 0;
-    public final static int SELL_PRICE = 1;
-
-
     private Item item;
 
 
-    private int[] price;
+    private int buy;
+    private int sell;
 
 
     public Content(Item item, int buy, int sell) {
-        this.price = new int[]{buy, sell};
+        this.buy = buy;
+        this.sell = sell;
         this.item = item;
         this.item.setLore(
             "",
-            "§b購入§f: §e$"+price[BUY_PRICE],
-            "§b売却§f: §e$"+price[SELL_PRICE],
+            "§b購入§f: §e$"+buy,
+            "§b売却§f: §e$"+sell,
             "",
             "§dタップして開く"
         );
     }
 
 
-    public Item getItem() {
-        return this.item;
+    public int getBuy() {
+        return buy;
     }
 
 
-    public int getPrice(int type) {
-        return this.price[type];
+    public int getSell() {
+        return sell;
+    }
+
+
+    public Item getItem() {
+        return item;
     }
 
 

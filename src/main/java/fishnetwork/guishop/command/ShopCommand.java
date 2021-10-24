@@ -3,6 +3,7 @@ package fishnetwork.guishop.command;
 import cn.nukkit.Player;
 import cn.nukkit.command.Command;
 import cn.nukkit.command.CommandSender;
+import fishnetwork.guishop.language.Lang;
 import fishnetwork.guishop.shop.MainShop;
 
 public class ShopCommand extends Command {
@@ -16,7 +17,7 @@ public class ShopCommand extends Command {
     @Override
     public boolean execute(CommandSender sender, String label, String[] args) {
         if(!(sender instanceof Player)) {
-            sender.sendMessage("§7[§bSHOP§7] §cゲーム内で使用してください");
+            sender.sendMessage(Lang.get("prefix")+Lang.get("in_server_command"));
             return false;
         }
         Player player = (Player)sender;
