@@ -62,7 +62,7 @@ public class Category extends ItemClick {
      * @param inventory_menu
      */
     public Category(String id, Item item) {
-        for(int i = 0; i < SHOP_SIZE; i++) this.inventory_category.addElement(i, ItemData.fromItem(SPACE_ITEM));
+        for(int i = 0; i < SHOP_SIZE; i++) inventory_category.addElement(i, ItemData.fromItem(SPACE_ITEM));
         this.id = id;
         this.item = item;
         this.item.setLore(
@@ -77,7 +77,7 @@ public class Category extends ItemClick {
      * @return
      */
     public String getId() {
-        return this.id;
+        return id;
     }
 
 
@@ -86,7 +86,7 @@ public class Category extends ItemClick {
      * @return
      */
     public Item getItem() {
-        return this.item;
+        return item;
     }
 
 
@@ -98,8 +98,8 @@ public class Category extends ItemClick {
      */
     public Category addCategory(int x, int y, Category category) {
         int slot = x + y * 9;
-        this.contents.put(slot, category);
-        this.inventory_category.addElement(slot, ItemData.fromItem(category.getItem()), category);
+        contents.put(slot, category);
+        inventory_category.addElement(slot, ItemData.fromItem(category.getItem()), category);
         return this;
     }
 
@@ -112,8 +112,8 @@ public class Category extends ItemClick {
      */
     public Category addContent(int x, int y, Content content) {
         int slot = x + y * 9;
-        this.contents.put(slot, content);
-        this.inventory_category.addElement(slot, ItemData.fromItem(content.getItem()), content);
+        contents.put(slot, content);
+        inventory_category.addElement(slot, ItemData.fromItem(content.getItem()), content);
         return this;
     }
 
@@ -123,7 +123,7 @@ public class Category extends ItemClick {
      * @param player
      */
     public void show(Player player) {
-        this.inventory_category.getMenu().openCategory(this.getId(), player);
+        inventory_category.getMenu().openCategory(getId(), player);
     }
 
 
@@ -132,7 +132,7 @@ public class Category extends ItemClick {
      * @return
      */
     public InventoryCategory getInventoryCategory() {
-        return this.inventory_category;
+        return inventory_category;
     }
 
 
