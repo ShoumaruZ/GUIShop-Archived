@@ -34,7 +34,7 @@ public class TransactionForm {
                 int amount = 0;
                 int price = content.getPrice(Content.SELL_PRICE);
                 for(Item contents: player.getInventory().getContents().values()) {
-                    if(contents.equals(item, true, false)) amount += contents.getCount();
+                    if(contents.equals(Item.get(item.getId(), item.getDamage()))) amount += contents.getCount();
                 }
                 economy.addMoney(player, amount * price);
                 player.getInventory().removeItem(Item.get(item.getId(), item.getDamage(), amount));
