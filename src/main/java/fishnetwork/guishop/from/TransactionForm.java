@@ -1,10 +1,13 @@
 package fishnetwork.guishop.from;
 
 import cn.nukkit.Player;
+import cn.nukkit.inventory.Inventory;
 import cn.nukkit.item.Item;
 import fishnetwork.guishop.element.Content;
-import fishnetwork.guishop.language.Lang;
-import me.onebone.economyapi.EconomyAPI;
+import fishnetwork.guishop.util.InventoryUtils;
+import fishnetwork.userapi.UserAPI;
+import fishnetwork.userapi.exception.InsufficientMoneyException;
+import fishnetwork.userapi.user.User;
 import ru.nukkitx.forms.elements.CustomForm;
 
 public class TransactionForm {
@@ -16,57 +19,50 @@ public class TransactionForm {
 
 
     public static void sendForm(Player player, Content content) {
-        Item item = content.getItem();
+        User user = UserAPI.getUser(player);
+        Item item = content.getItem().clone();
+        Inventory inventory = player.getInventory();
         CustomForm form = new CustomForm("Shop")
-        .addLabel(
-            "§7アイテム§f: "+item.getName()+" - "+item.getId()+":"+item.getDamage()+"\n"+
-            "§7個数§f: ×"+item.getCount()+"\n"+
-            "§7購入§f: §e$"+content.getBuy()+"\n"+
-            "§7売却§f: §e$"+content.getSell()
-        )
+        .addLabel(String.format("""
+            §7アイテム§f: %s - %s:%s
+            §7個数§f: ×%s
+            §7購入§f: §e$%s
+            §7売却§f: §e$%s""",
+            item.getName(), item.getId(), item.getDamage(), item.getCount(), content.getBuy(), content.getSell()
+        ))
         .addToggle("購入 / 売却", false)
         .addToggle("全て売却する", false)
         .addInput("取引する個数を入力してください");
         form.send(player, (targetPlayer, targetForm, data) -> {
             if(data == null) return;
-            EconomyAPI economy = EconomyAPI.getInstance();
-            if((boolean)data.get(ALL_SELL)) {
-                int amount = 0;
-                int price = content.getSell();
-                for(Item contents: player.getInventory().getContents().values()) {
-                    if(contents.equals(Item.get(item.getId(), item.getDamage()))) amount += contents.getCount();
-                }
-                economy.addMoney(player, amount * price);
-                player.getInventory().removeItem(Item.get(item.getId(), item.getDamage(), amount));
-                player.sendMessage(Lang.get("prefix")+Lang.get("item_transaction", item.getName(), amount, "売却", amount * price));
-                return;
-            }
             if(!data.get(AMOUNT).toString().matches("[0-9]+")) {
-                player.sendMessage(Lang.get("prefix")+Lang.get("invalid_value"));
+                player.sendMessage("§7» §3Shop §7| §c正しい数値を入力してください");
                 return;
             }
-            int amount = Integer.parseInt(data.get(AMOUNT).toString());
-            int price = (boolean)data.get(TYPE) ? content.getSell() : content.getBuy();
-            if((boolean)data.get(TYPE)) {
-                if(!player.getInventory().contains(Item.get(item.getId(), item.getDamage(), amount))) {
-                    player.sendMessage(Lang.get("prefix")+Lang.get("insufficient_error", "アイテム"));
+            int amount = (boolean)data.get(ALL_SELL) ? InventoryUtils.getItemAllCount(item, inventory) : Integer.parseInt(data.get(AMOUNT).toString());
+            int price = amount * ((boolean)data.get(TYPE) || (boolean)data.get(ALL_SELL) ? content.getSell() : content.getBuy());
+            item.setCount(amount);
+            if((boolean)data.get(TYPE) || (boolean)data.get(ALL_SELL)) {
+                if(!inventory.contains(item)) {
+                    player.sendMessage("§7» §3Shop §7| §cアイテムが不足しています");
                     return;
                 }
-                economy.addMoney(player, amount * price);
-                player.getInventory().removeItem(Item.get(item.getId(), item.getDamage(), amount));
-                player.sendMessage(Lang.get("prefix")+Lang.get("item_transaction", item.getName(), amount, "売却", amount * price));
+                user.addMoney(price);
+                inventory.removeItem(item);
+                player.sendMessage(String.format("§7» §3Shop §7| §f%0§bを§f%1§b個売却しました(§e$%0§b)", item.getName(), amount, price));
             }else{
-                if(amount * price > economy.myMoney(player)) {
-                    player.sendMessage(Lang.get("prefix")+Lang.get("insufficient_error", "所持金"));
+                if(!inventory.canAddItem(item)) {
+                    player.sendMessage("§7» §3Shop §7| §c空きスロットが不足しています");
                     return;
                 }
-                if(!player.getInventory().canAddItem(Item.get(item.getId(), item.getDamage(), amount))) {
-                    player.sendMessage(Lang.get("prefix")+Lang.get("insufficient_error", "インベントリの空き"));
+                try {    
+                    user.reduceMoney(price);
+                    inventory.addItem(item);
+                    player.sendMessage(String.format("§7» §3Shop §7| §f%0§bを§f%1§b個購入しました(§e$%0§b)", item.getName(), amount, price));
+                }catch(InsufficientMoneyException exception) {
+                    player.sendMessage("§7» §3Shop §7| §c所持金が不足しています");
                     return;
                 }
-                economy.reduceMoney(player, amount * price);
-                player.getInventory().addItem(Item.get(item.getId(), item.getDamage(), amount));
-                player.sendMessage(Lang.get("prefix")+Lang.get("item_transaction", item.getName(), amount, "購入", amount * price));
             }
         });
     }

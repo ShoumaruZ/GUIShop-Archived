@@ -22,13 +22,6 @@ public class Content extends ItemClick {
         this.buy = buy;
         this.sell = sell;
         this.item = item;
-        this.item.setLore(
-            "",
-            "§b購入§f: §e$"+buy,
-            "§b売却§f: §e$"+sell,
-            "",
-            "§dタップして開く"
-        );
     }
 
 

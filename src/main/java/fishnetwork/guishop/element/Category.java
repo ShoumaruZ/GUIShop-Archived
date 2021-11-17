@@ -14,123 +14,64 @@ import ru.ragnok123.menuAPI.inventory.item.ItemData;
 public class Category extends ItemClick {
 
 
-    /*		
-     *      0 1 2 3 4 5 6 7 8 (x)
-	 *    0 x x x x x x x x x
-	 *    1 x x x x x x x x x
-	 *    2 x x x x x x x x x
-	 *    3 x x x x x x x x x
-	 *    4 x x x x x x x x x
-	 *    5 x x x x x x x x x
-     *   (y)
-	 */
-
-
-    /**
-     * 空白埋めをするためのアイテム(Airにすれば空白)
-     */
-    private static final Item SPACE_ITEM = Item.get(BlockID.STAINED_GLASS_PANE, DyeColor.LIGHT_GRAY.getWoolData());
-
-    /**
-     * ショップのサイズ
-     */
+    private static final Item SPACE_ITEM = Item.getBlock(BlockID.STAINED_GLASS_PANE, DyeColor.LIGHT_GRAY.getWoolData());
+    
     private static final int SHOP_SIZE = 54;
 
 
-    /** @var InventoryCategory */
     private InventoryCategory inventory_category = new InventoryCategory();
 
 
-    /** @var ItemClick[int] */
     private Map<Integer, ItemClick> contents = new HashMap<Integer, ItemClick>();
 
 
-    /** @var Item */
     private Item item;
 
-
-    /** @var String */
     private String id;
 
 
-    /**
-     * ショップのカテゴリ
-     * InventoryMenuを引数に取り登録も行います
-     * @param id
-     * @param item
-     * @param contents
-     * @param inventory_menu
-     */
     public Category(String id, Item item) {
         for(int i = 0; i < SHOP_SIZE; i++) inventory_category.addElement(i, ItemData.fromItem(SPACE_ITEM));
         this.id = id;
         this.item = item;
-        this.item.setLore(
-            "",
-            "§dタップして開く"
-        );
     }
 
 
-    /**
-     * IDを取得します
-     * @return
-     */
     public String getId() {
         return id;
     }
 
 
-    /**
-     * Itemを取得します
-     * @return
-     */
     public Item getItem() {
         return item;
     }
 
 
-    /**
-     * カテゴリーを追加します
-     * @param x
-     * @param y
-     * @param category
-     */
     public Category addCategory(int x, int y, Category category) {
         int slot = x + y * 9;
+        ItemData item = ItemData.fromItem(category.getItem());
         contents.put(slot, category);
-        inventory_category.addElement(slot, ItemData.fromItem(category.getItem()), category);
+        item.lores = new String[]{"", "§dタップして開く"};
+        inventory_category.addElement(slot, item, category);
         return this;
     }
 
 
-    /**
-     * コンテンツ(商品)を追加します
-     * @param x
-     * @param y
-     * @param content
-     */
     public Category addContent(int x, int y, Content content) {
         int slot = x + y * 9;
+        ItemData item = ItemData.fromItem(content.getItem());
         contents.put(slot, content);
-        inventory_category.addElement(slot, ItemData.fromItem(content.getItem()), content);
+        item.lores = new String[]{"", "§b購入§f: §e$"+content.getBuy(), "§b売却§f: §e$"+content.getSell(), "", "§dタップして開く"};
+        inventory_category.addElement(slot, item, content);
         return this;
     }
 
 
-    /**
-     * プレイヤーに表示します
-     * @param player
-     */
     public void show(Player player) {
         inventory_category.getMenu().openCategory(getId(), player);
     }
 
 
-    /**
-     * InventoryCategoryを取得します
-     * @return
-     */
     public InventoryCategory getInventoryCategory() {
         return inventory_category;
     }
