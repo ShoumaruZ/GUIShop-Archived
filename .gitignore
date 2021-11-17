@@ -7,5 +7,10 @@ build
 # bin
 bin
 
-# lib
-lib
+.vscode
+
+.settings
+
+.classpath
+
+.project
