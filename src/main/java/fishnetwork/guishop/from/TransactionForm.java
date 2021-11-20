@@ -7,7 +7,7 @@ import fishnetwork.guishop.element.Content;
 import fishnetwork.guishop.util.InventoryUtils;
 import fishnetwork.userapi.UserAPI;
 import fishnetwork.userapi.exception.InsufficientMoneyException;
-import fishnetwork.userapi.user.User;
+import fishnetwork.userapi.User;
 import ru.nukkitx.forms.elements.CustomForm;
 
 public class TransactionForm {
