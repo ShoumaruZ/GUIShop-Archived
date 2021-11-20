@@ -27,7 +27,7 @@ public class MainShop {
     private static final Content REDSTONE = new Content(Item.get(ItemID.REDSTONE_DUST), 30, 15);
     private static final Content LAPIS = new Content(Item.get(ItemID.DYE, DyeColor.BLUE.getDyeData()), 50, 25);
     private static final Content IRON = new Content(Item.get(ItemID.IRON_INGOT), 300, 150);
-    private static final Content GOLD = new Content(Item.get(ItemID.GOLD_INGOT), 500, 250);
+    private static final Content GOLD = new Content(Item.get(ItemID.GOLD_INGOT), 400, 200);
     private static final Content DIAMOND = new Content(Item.get(ItemID.DIAMOND), 1400, 700);
     private static final Content EMERALD = new Content(Item.get(ItemID.EMERALD), 2000, 1000);
     private static final Content COAL_BLOCK = new Content(Item.get(BlockID.COAL_BLOCK), 160, 100);
@@ -49,18 +49,18 @@ public class MainShop {
     private static final Content STONE_PICKAXE = new Content(Item.get(ItemID.STONE_PICKAXE), 20, 0);
     private static final Content STONE_SHOVEL = new Content(Item.get(ItemID.STONE_SHOVEL), 20, 0);
     private static final Content STONE_AXE = new Content(Item.get(ItemID.STONE_AXE), 20, 0);
-    private static final Content IRON_SWORD = new Content(Item.get(ItemID.IRON_SWORD), 1200, 0);
-    private static final Content IRON_PICKAXE = new Content(Item.get(ItemID.IRON_PICKAXE), 1800, 0);
-    private static final Content IRON_SHOVEL = new Content(Item.get(ItemID.IRON_SHOVEL), 600, 0);
-    private static final Content IRON_AXE = new Content(Item.get(ItemID.IRON_AXE), 1800, 0);
-    private static final Content GOLD_SWORD = new Content(Item.get(ItemID.GOLD_SWORD), 1600, 0);
-    private static final Content GOLD_PICKAXE = new Content(Item.get(ItemID.GOLD_PICKAXE), 2400, 0);
-    private static final Content GOLD_SHOVEL = new Content(Item.get(ItemID.GOLD_SHOVEL), 800, 0);
-    private static final Content GOLD_AXE = new Content(Item.get(ItemID.GOLD_AXE), 2400, 0);
-    private static final Content DIAMOND_SWORD = new Content(Item.get(ItemID.DIAMOND_SWORD), 4000, 0);
-    private static final Content DIAMOND_PICKAXE = new Content(Item.get(ItemID.DIAMOND_PICKAXE), 6000, 0);
-    private static final Content DIAMOND_SHOVEL = new Content(Item.get(ItemID.DIAMOND_SHOVEL), 2000, 0);
-    private static final Content DIAMOND_AXE = new Content(Item.get(ItemID.DIAMOND_AXE), 6000, 0);
+    private static final Content IRON_SWORD = new Content(Item.get(ItemID.IRON_SWORD), 600, 0);
+    private static final Content IRON_PICKAXE = new Content(Item.get(ItemID.IRON_PICKAXE), 900, 0);
+    private static final Content IRON_SHOVEL = new Content(Item.get(ItemID.IRON_SHOVEL), 300, 0);
+    private static final Content IRON_AXE = new Content(Item.get(ItemID.IRON_AXE), 900, 0);
+    private static final Content GOLD_SWORD = new Content(Item.get(ItemID.GOLD_SWORD), 800, 0);
+    private static final Content GOLD_PICKAXE = new Content(Item.get(ItemID.GOLD_PICKAXE), 1200, 0);
+    private static final Content GOLD_SHOVEL = new Content(Item.get(ItemID.GOLD_SHOVEL), 400, 0);
+    private static final Content GOLD_AXE = new Content(Item.get(ItemID.GOLD_AXE), 1200, 0);
+    private static final Content DIAMOND_SWORD = new Content(Item.get(ItemID.DIAMOND_SWORD), 2800, 0);
+    private static final Content DIAMOND_PICKAXE = new Content(Item.get(ItemID.DIAMOND_PICKAXE), 4200, 0);
+    private static final Content DIAMOND_SHOVEL = new Content(Item.get(ItemID.DIAMOND_SHOVEL), 1400, 0);
+    private static final Content DIAMOND_AXE = new Content(Item.get(ItemID.DIAMOND_AXE), 4200, 0);
 
 
     /** Armor Category */
@@ -72,20 +72,20 @@ public class MainShop {
     private static final Content CHAIN_CHESTPLATE = new Content(Item.get(ItemID.CHAIN_CHESTPLATE), 1600, 0);
     private static final Content CHAIN_LEGGINGS = new Content(Item.get(ItemID.CHAIN_LEGGINGS), 1400, 0);
     private static final Content CHAIN_BOOTS = new Content(Item.get(ItemID.CHAIN_BOOTS), 800, 0);
-    private static final Content IRON_HELMET = new Content(Item.get(ItemID.IRON_HELMET), 3000, 0);
-    private static final Content IRON_CHESTPLATE = new Content(Item.get(ItemID.IRON_CHESTPLATE), 4800, 0);
-    private static final Content IRON_LEGGINGS = new Content(Item.get(ItemID.IRON_LEGGINGS), 4200, 0);
-    private static final Content IRON_BOOTS = new Content(Item.get(ItemID.IRON_BOOTS), 2400, 0);
-    private static final Content GOLD_HELMET = new Content(Item.get(ItemID.GOLD_HELMET), 4000, 0);
-    private static final Content GOLD_CHESTPLATE = new Content(Item.get(ItemID.GOLD_CHESTPLATE), 6400, 0);
-    private static final Content GOLD_LEGGINGS = new Content(Item.get(ItemID.GOLD_LEGGINGS), 5600, 0);
-    private static final Content GOLD_BOOTS = new Content(Item.get(ItemID.GOLD_BOOTS), 3200, 0);
-    private static final Content DIAMOND_HELMET = new Content(Item.get(ItemID.DIAMOND_HELMET), 10000, 0);
-    private static final Content DIAMOND_CHESTPLATE = new Content(Item.get(ItemID.DIAMOND_CHESTPLATE), 16000, 0);
-    private static final Content DIAMOND_LEGGINGS = new Content(Item.get(ItemID.DIAMOND_LEGGINGS), 14000, 0);
-    private static final Content DIAMOND_BOOTS = new Content(Item.get(ItemID.DIAMOND_BOOTS), 8000, 0);
-    private static final Content BOW = new Content(Item.get(ItemID.BOW), 1000, 0);
-    private static final Content ARROW = new Content(Item.get(ItemID.ARROW, 0, 16), 300, 0);
+    private static final Content IRON_HELMET = new Content(Item.get(ItemID.IRON_HELMET), 1500, 0);
+    private static final Content IRON_CHESTPLATE = new Content(Item.get(ItemID.IRON_CHESTPLATE), 2400, 0);
+    private static final Content IRON_LEGGINGS = new Content(Item.get(ItemID.IRON_LEGGINGS), 2100, 0);
+    private static final Content IRON_BOOTS = new Content(Item.get(ItemID.IRON_BOOTS), 1200, 0);
+    private static final Content GOLD_HELMET = new Content(Item.get(ItemID.GOLD_HELMET), 2000, 0);
+    private static final Content GOLD_CHESTPLATE = new Content(Item.get(ItemID.GOLD_CHESTPLATE), 3200, 0);
+    private static final Content GOLD_LEGGINGS = new Content(Item.get(ItemID.GOLD_LEGGINGS), 2800, 0);
+    private static final Content GOLD_BOOTS = new Content(Item.get(ItemID.GOLD_BOOTS), 1600, 0);
+    private static final Content DIAMOND_HELMET = new Content(Item.get(ItemID.DIAMOND_HELMET), 7000, 0);
+    private static final Content DIAMOND_CHESTPLATE = new Content(Item.get(ItemID.DIAMOND_CHESTPLATE), 11200, 0);
+    private static final Content DIAMOND_LEGGINGS = new Content(Item.get(ItemID.DIAMOND_LEGGINGS), 9800, 0);
+    private static final Content DIAMOND_BOOTS = new Content(Item.get(ItemID.DIAMOND_BOOTS), 5600, 0);
+    private static final Content BOW = new Content(Item.get(ItemID.BOW), 800, 0);
+    private static final Content ARROW = new Content(Item.get(ItemID.ARROW, 0, 16), 200, 0);
 
 
     /** Farm Category */
@@ -231,7 +231,7 @@ public class MainShop {
     private static final Content BASALT = new Content(Item.getBlock(BlockID.BASALT), 30, 15);
     private static final Content BLACKSTONE = new Content(Item.getBlock(BlockID.BLACKSTONE), 30, 15);
     private static final Content GLIDED_BLACKSTONE = new Content(Item.getBlock(BlockID.GILDED_BLACKSTONE), 35, 20);
-    private static final Content NETHER_GOLD_ORE = new Content(Item.getBlock(BlockID.NETHER_GOLD_ORE), 500, 250);
+    private static final Content NETHER_GOLD_ORE = new Content(Item.getBlock(BlockID.NETHER_GOLD_ORE), 400, 200);
     private static final Content CRYING_OBSIDIAN = new Content(Item.getBlock(BlockID.CRYING_OBSIDIAN), 50, 25);
     private static final Content SHROOMLIGHT = new Content(Item.getBlock(BlockID.SHROOMLIGHT), 50, 25);
     private static final Content CRIMSON_STEM = new Content(Item.getBlock(BlockID.CRIMSON_STEM), 30, 15);
@@ -254,22 +254,22 @@ public class MainShop {
 
 
     /** Dye Category */
-    private static final Content WHITE_DYE = new Content(Item.get(ItemID.DYE, DyeColor.WHITE.getItemDyeMeta()), 25, 5);
-    private static final Content LIGHT_GRAY_DYE = new Content(Item.get(ItemID.DYE, DyeColor.LIGHT_GRAY.getItemDyeMeta()), 25, 5);
-    private static final Content GRAY_DYE = new Content(Item.get(ItemID.DYE, DyeColor.GRAY.getItemDyeMeta()), 25, 5);
-    private static final Content BLACK_DYE = new Content(Item.get(ItemID.DYE, DyeColor.BLACK.getItemDyeMeta()), 25, 5);
-    private static final Content BROWN_DYE = new Content(Item.get(ItemID.DYE, DyeColor.BROWN.getItemDyeMeta()), 25, 5);
-    private static final Content RED_DYE = new Content(Item.get(ItemID.DYE, DyeColor.RED.getItemDyeMeta()), 25, 5);
-    private static final Content ORANGE_DYE = new Content(Item.get(ItemID.DYE, DyeColor.ORANGE.getItemDyeMeta()), 25, 5);
-    private static final Content YELLOW_DYE = new Content(Item.get(ItemID.DYE, DyeColor.YELLOW.getItemDyeMeta()), 25, 5);
-    private static final Content LIME_DYE = new Content(Item.get(ItemID.DYE, DyeColor.LIME.getItemDyeMeta()), 25, 5);
-    private static final Content GREEN_DYE = new Content(Item.get(ItemID.DYE, DyeColor.GREEN.getItemDyeMeta()), 25, 5);
-    private static final Content CYAN_DYE = new Content(Item.get(ItemID.DYE, DyeColor.CYAN.getItemDyeMeta()), 25, 5);
-    private static final Content LIGHT_BLUE_DYE = new Content(Item.get(ItemID.DYE, DyeColor.LIGHT_BLUE.getItemDyeMeta()), 25, 5);
-    private static final Content BLUE_DYE = new Content(Item.get(ItemID.DYE, DyeColor.BLUE.getItemDyeMeta()), 25, 5);
-    private static final Content PURPLE_DYE = new Content(Item.get(ItemID.DYE, DyeColor.PURPLE.getItemDyeMeta()), 25, 5);
-    private static final Content MAGENTA_DYE = new Content(Item.get(ItemID.DYE, DyeColor.MAGENTA.getItemDyeMeta()), 25, 5);
-    private static final Content PINK_DYE = new Content(Item.get(ItemID.DYE, DyeColor.PINK.getItemDyeMeta()), 25, 5);
+    private static final Content WHITE_DYE = new Content(Item.get(ItemID.DYE, DyeColor.WHITE.getItemDyeMeta()), 25, 3);
+    private static final Content LIGHT_GRAY_DYE = new Content(Item.get(ItemID.DYE, DyeColor.LIGHT_GRAY.getItemDyeMeta()), 25, 3);
+    private static final Content GRAY_DYE = new Content(Item.get(ItemID.DYE, DyeColor.GRAY.getItemDyeMeta()), 25, 3);
+    private static final Content BLACK_DYE = new Content(Item.get(ItemID.DYE, DyeColor.BLACK.getItemDyeMeta()), 25, 3);
+    private static final Content BROWN_DYE = new Content(Item.get(ItemID.DYE, DyeColor.BROWN.getItemDyeMeta()), 25, 3);
+    private static final Content RED_DYE = new Content(Item.get(ItemID.DYE, DyeColor.RED.getItemDyeMeta()), 25, 3);
+    private static final Content ORANGE_DYE = new Content(Item.get(ItemID.DYE, DyeColor.ORANGE.getItemDyeMeta()), 25, 3);
+    private static final Content YELLOW_DYE = new Content(Item.get(ItemID.DYE, DyeColor.YELLOW.getItemDyeMeta()), 25, 3);
+    private static final Content LIME_DYE = new Content(Item.get(ItemID.DYE, DyeColor.LIME.getItemDyeMeta()), 25, 3);
+    private static final Content GREEN_DYE = new Content(Item.get(ItemID.DYE, DyeColor.GREEN.getItemDyeMeta()), 25, 3);
+    private static final Content CYAN_DYE = new Content(Item.get(ItemID.DYE, DyeColor.CYAN.getItemDyeMeta()), 25, 3);
+    private static final Content LIGHT_BLUE_DYE = new Content(Item.get(ItemID.DYE, DyeColor.LIGHT_BLUE.getItemDyeMeta()), 25, 3);
+    private static final Content BLUE_DYE = new Content(Item.get(ItemID.DYE, DyeColor.BLUE.getItemDyeMeta()), 25, 3);
+    private static final Content PURPLE_DYE = new Content(Item.get(ItemID.DYE, DyeColor.PURPLE.getItemDyeMeta()), 25, 3);
+    private static final Content MAGENTA_DYE = new Content(Item.get(ItemID.DYE, DyeColor.MAGENTA.getItemDyeMeta()), 25, 3);
+    private static final Content PINK_DYE = new Content(Item.get(ItemID.DYE, DyeColor.PINK.getItemDyeMeta()), 25, 3);
 
 
     private static final Category ORE_SHOP = new Category("ore", Item.get(ItemID.DIAMOND).setCustomName("§b鉱石"));
