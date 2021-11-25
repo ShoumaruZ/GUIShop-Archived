@@ -1,10 +1,10 @@
-package fishnetwork.guishop.from;
+package fishnetwork.officialshop.from;
 
 import cn.nukkit.Player;
 import cn.nukkit.inventory.Inventory;
 import cn.nukkit.item.Item;
-import fishnetwork.guishop.element.Content;
-import fishnetwork.guishop.util.InventoryUtils;
+import fishnetwork.officialshop.element.Content;
+import fishnetwork.officialshop.util.InventoryUtils;
 import fishnetwork.userapi.UserAPI;
 import fishnetwork.userapi.exception.InsufficientMoneyException;
 import fishnetwork.userapi.User;

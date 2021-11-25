@@ -1,4 +1,4 @@
-package fishnetwork.guishop.util;
+package fishnetwork.officialshop.util;
 
 import cn.nukkit.inventory.Inventory;
 import cn.nukkit.item.Item;

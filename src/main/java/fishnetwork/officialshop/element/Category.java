@@ -1,4 +1,4 @@
-package fishnetwork.guishop.element;
+package fishnetwork.officialshop.element;
 
 import java.util.HashMap;
 import java.util.Map;

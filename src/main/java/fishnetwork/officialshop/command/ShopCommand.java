@@ -1,9 +1,9 @@
-package fishnetwork.guishop.command;
+package fishnetwork.officialshop.command;
 
 import cn.nukkit.Player;
 import cn.nukkit.command.Command;
 import cn.nukkit.command.CommandSender;
-import fishnetwork.guishop.shop.MainShop;
+import fishnetwork.officialshop.shop.MainShop;
 
 public class ShopCommand extends Command {
 

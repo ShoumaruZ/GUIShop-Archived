@@ -1,10 +1,10 @@
-package fishnetwork.guishop.element;
+package fishnetwork.officialshop.element;
 
 import cn.nukkit.Player;
 import cn.nukkit.Server;
 import cn.nukkit.item.Item;
-import fishnetwork.guishop.Main;
-import fishnetwork.guishop.from.TransactionForm;
+import fishnetwork.officialshop.Main;
+import fishnetwork.officialshop.from.TransactionForm;
 import ru.ragnok123.menuAPI.inventory.InventoryMenuHandler;
 import ru.ragnok123.menuAPI.inventory.item.ItemClick;
 

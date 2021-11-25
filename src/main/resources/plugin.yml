@@ -1,4 +1,4 @@
-name: GuiShop
-main: fishnetwork.guishop.Main
+name: OfficialShop
+main: fishnetwork.officialshop.Main
 version: "1.0.0"
 api: "1.0.0"

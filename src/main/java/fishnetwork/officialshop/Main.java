@@ -1,8 +1,8 @@
-package fishnetwork.guishop;
+package fishnetwork.officialshop;
 
 import cn.nukkit.Server;
 import cn.nukkit.plugin.PluginBase;
-import fishnetwork.guishop.command.ShopCommand;
+import fishnetwork.officialshop.command.ShopCommand;
 
 public class Main extends PluginBase {
 

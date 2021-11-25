@@ -1,4 +1,4 @@
-package fishnetwork.guishop.shop;
+package fishnetwork.officialshop.shop;
 
 import cn.nukkit.Player;
 import cn.nukkit.block.BlockCoral;
@@ -12,8 +12,8 @@ import cn.nukkit.block.BlockWood2;
 import cn.nukkit.item.Item;
 import cn.nukkit.item.ItemID;
 import cn.nukkit.utils.DyeColor;
-import fishnetwork.guishop.element.Category;
-import fishnetwork.guishop.element.Content;
+import fishnetwork.officialshop.element.Category;
+import fishnetwork.officialshop.element.Content;
 import ru.ragnok123.menuAPI.inventory.InventoryMenu;
 
 public class MainShop {
