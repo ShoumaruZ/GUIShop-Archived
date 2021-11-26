@@ -21,7 +21,7 @@ public class ShopCommand extends Command {
             return false;
         }
         Player player = (Player)sender;
-        MainShop.open(player);
+        MainShop.SHOP.sendForm(player);
         return true;
     }
 

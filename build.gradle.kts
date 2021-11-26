@@ -15,10 +15,11 @@ repositories {
 }
 
 dependencies{
+    annotationProcessor("org.projectlombok", "lombok", "1.18.22")
     compileOnly("org.powernukkit", "powernukkit", "1.5.1.0-PN")
     compileOnly("fishnetwork.userapi", "UserAPI", "1.0.0")
+    compileOnly("org.projectlombok", "lombok", "1.18.22")
     compileOnly("ru.nukkitx", "FormAPI", "1.0.9")
-    compileOnly("ru.ragnok123", "menuAPI", "1.0")
 }
 
 tasks{

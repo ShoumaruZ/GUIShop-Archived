@@ -1,13 +1,14 @@
-package fishnetwork.officialshop.from;
+package fishnetwork.officialshop.form;
 
 import cn.nukkit.Player;
 import cn.nukkit.inventory.Inventory;
 import cn.nukkit.item.Item;
-import fishnetwork.officialshop.element.Content;
-import fishnetwork.officialshop.util.InventoryUtils;
+import fishnetwork.officialshop.Content;
+import fishnetwork.officialshop.Shop;
+import fishnetwork.officialshop.utils.InventoryUtils;
+import fishnetwork.userapi.User;
 import fishnetwork.userapi.UserAPI;
 import fishnetwork.userapi.exception.InsufficientMoneyException;
-import fishnetwork.userapi.User;
 import ru.nukkitx.forms.elements.CustomForm;
 
 public class TransactionForm {
@@ -18,7 +19,7 @@ public class TransactionForm {
     private static final int AMOUNT = 3;
 
 
-    public static void sendForm(Player player, Content content) {
+    public static void sendForm(Player player, Content content, Shop parentShop) {
         User user = UserAPI.getUser(player);
         Item item = content.getItem().clone();
         Inventory inventory = player.getInventory();
@@ -39,9 +40,9 @@ public class TransactionForm {
                 int amount = InventoryUtils.getItemAllCount(item, inventory);
                 int price = amount * content.getSell();
                 user.addMoney(price);
-                item.setCount(amount);
+                item.setCount(amount * item.getCount());
                 inventory.removeItem(item);
-                player.sendMessage(String.format("§7» §3Shop §7| §f%s§bを§f%s§b個売却しました(§e$%s§b)", item.getName(), amount, price));
+                player.sendMessage(String.format("§7» §3Shop §7| §f%s§bを§f%s§b個売却しました(§e$%s§b)", item.getName(), item.getCount(), price));
                 return;
             }
             if(!data.get(AMOUNT).toString().matches("[0-9]+")) {
@@ -56,9 +57,9 @@ public class TransactionForm {
                 int amount = Integer.parseInt(data.get(AMOUNT).toString());
                 int price = amount * content.getSell();
                 user.addMoney(price);
-                item.setCount(amount);
+                item.setCount(amount * item.getCount());
                 inventory.removeItem(item);
-                player.sendMessage(String.format("§7» §3Shop §7| §f%s§bを§f%s§b個売却しました(§e$%s§b)", item.getName(), amount, price));
+                player.sendMessage(String.format("§7» §3Shop §7| §f%s§bを§f%s§b個売却しました(§e$%s§b)", item.getName(), item.getCount(), price));
             }else{
                 if(!inventory.canAddItem(item)) {
                     player.sendMessage("§7» §3Shop §7| §c空きスロットが不足しています");
@@ -67,15 +68,16 @@ public class TransactionForm {
                 int amount = Integer.parseInt(data.get(AMOUNT).toString());
                 int price = amount * content.getBuy();
                 try {
-                    item.setCount(amount);
+                    item.setCount(amount * item.getCount());
                     user.reduceMoney(price);
                     inventory.addItem(item);
-                    player.sendMessage(String.format("§7» §3Shop §7| §f%s§bを§f%s§b個購入しました(§e$%s§b)", item.getName(), amount, price));
+                    player.sendMessage(String.format("§7» §3Shop §7| §f%s§bを§f%s§b個購入しました(§e$%s§b)", item.getName(), item.getCount(), price));
                 }catch(InsufficientMoneyException exception) {
                     player.sendMessage("§7» §3Shop §7| §c所持金が不足しています");
                     return;
                 }
             }
+            parentShop.sendForm(player);
         });
     }
 
