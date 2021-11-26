@@ -232,7 +232,7 @@ public class MainShop {
     private static final Content GLOWSTONE = new Content(Item.getBlock(BlockID.GLOWSTONE), "グロウストーン", "textures/blocks/glowstone", 50, 25);
     private static final Content BASALT = new Content(Item.getBlock(BlockID.BASALT), "玄武岩", "textures/blocks/basalt_top", 30, 15);
     private static final Content BLACKSTONE = new Content(Item.getBlock(BlockID.BLACKSTONE), "ブラックストーン", "textures/blocks/blackstone", 30, 15);
-    private static final Content GLIDED_BLACKSTONE = new Content(Item.getBlock(BlockID.GILDED_BLACKSTONE), "金色のブラックストーン", "textures/blocks/gilded_blackstone", 35, 20);
+    private static final Content GLIDED_BLACKSTONE = new Content(Item.getBlock(BlockID.GILDED_BLACKSTONE), "金色のブラックストーン", "textures/blocks/gilded_blackstone", 300, 150);
     private static final Content NETHER_GOLD_ORE = new Content(Item.getBlock(BlockID.NETHER_GOLD_ORE), "ネザーゴールド鉱石", "textures/blocks/nether_gold_ore", 400, 200);
     private static final Content CRYING_OBSIDIAN = new Content(Item.getBlock(BlockID.CRYING_OBSIDIAN), "泣く黒曜石", "textures/blocks/crying_obsidian", 50, 25);
     private static final Content SHROOMLIGHT = new Content(Item.getBlock(BlockID.SHROOMLIGHT), "きのこライト", "textures/blocks/shroomlight", 50, 25);
@@ -518,6 +518,7 @@ public class MainShop {
         .addElement(TUBE_CORAL_BLOCK)
         .addElement(TUBE_CORAL)
         .addElement(TUBE_CORAL_FAN)
+        .addElement(BRAIN_CORAL_BLOCK)
         .addElement(BRAIN_CORAL)
         .addElement(BRAIN_CORAL_FAN)
         .addElement(BUBBLE_CORAL_BLOCK)
