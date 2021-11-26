@@ -273,6 +273,13 @@ public class MainShop {
     private static final Content MAGENTA_DYE = new Content(Item.get(ItemID.DYE, DyeColor.MAGENTA.getItemDyeMeta()), "赤紫の染料", "textures/items/dye_powder_magenta", 25, 3);
     private static final Content PINK_DYE = new Content(Item.get(ItemID.DYE, DyeColor.PINK.getItemDyeMeta()), "ピンクの染料", "textures/items/dye_powder_pink", 25, 3);
 
+
+    /** Rare Shop */
+    private static final Content SHULKER_SHELL = new Content(Item.get(ItemID.SHULKER_SHELL, 0, 2), "シュルカーの殻", "textures/items/shulker_shell", 5000, 1000);
+    private static final Content ITEM_FRAME = new Content(Item.get(ItemID.ITEM_FRAME), "額縁", "textures/items/item_frame", 600, 200);
+    private static final Content BELL = new Content(Item.getBlock(BlockID.BELL), "ベル", "textures/items/villagebell", 5000, 1000);
+
+
     private static final Shop WEAPON_SHOP = new Shop("武器", "textures/items/diamond_sword");
 
     private static final Shop WEAPON_TOOL_SHOP = new Shop("ツール", "textures/items/diamond_pickaxe");
@@ -307,16 +314,18 @@ public class MainShop {
 
     private static final Shop FOOD_SHOP = new Shop("食料", "textures/items/beef_cooked");
 
+    private static final Shop RARE_SHOP = new Shop("レアアイテム", "textures/blocks/ender_chest_front");
+
 
     static {
-
         SHOP
         .addElement(WEAPON_SHOP)
         .addElement(BLOCK_SHOP)
         .addElement(ORE_SHOP)
         .addElement(DYE_SHOP)
         .addElement(FARM_SHOP)
-        .addElement(FOOD_SHOP);
+        .addElement(FOOD_SHOP)
+        .addElement(RARE_SHOP);
 
         ORE_SHOP
         .addElement(QUARTZ)
@@ -570,6 +579,11 @@ public class MainShop {
         .addElement(PURPLE_DYE)
         .addElement(MAGENTA_DYE)
         .addElement(PINK_DYE);
+
+        RARE_SHOP
+        .addElement(ITEM_FRAME)
+        .addElement(SHULKER_SHELL)
+        .addElement(BELL);
     }
 
 
