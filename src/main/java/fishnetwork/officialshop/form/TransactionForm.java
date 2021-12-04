@@ -43,6 +43,7 @@ public class TransactionForm {
                 item.setCount(amount * item.getCount());
                 inventory.removeItem(item);
                 player.sendMessage(String.format("§7» §3Shop §7| §f%s§bを§f%s§b個売却しました(§e$%s§b)", item.getName(), item.getCount(), price));
+                parentShop.sendForm(player);
                 return;
             }
             if(!data.get(AMOUNT).toString().matches("[0-9]+")) {
