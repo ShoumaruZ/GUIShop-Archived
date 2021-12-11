@@ -226,11 +226,11 @@ public class MainShop {
     private static final Content NETHER_RACK = new Content(Item.getBlock(BlockID.NETHERRACK), "ネザーレック", "textures/blocks/netherrack", 10, 3);
     private static final Content SOUL_SAND = new Content(Item.getBlock(BlockID.SOUL_SAND), "ソウルサンド", "textures/blocks/soul_sand", 20, 10);
     private static final Content SOUL_SOIL = new Content(Item.getBlock(BlockID.SOUL_SOIL), "魂の土壌", "textures/blocks/soul_soil", 30, 15);
-    private static final Content NETHER_BRICKS = new Content(Item.getBlock(BlockID.NETHER_BRICKS), "ネザーレンガのブロック", "textures/blocks/nether_brick", 30, 15);
-    private static final Content RED_NETHER_BRICK = new Content(Item.getBlock(BlockID.RED_NETHER_BRICK), "赤いネザーレンガ", "textures/blocks/red_nether_brick", 30, 15);
-    private static final Content MAGMA = new Content(Item.getBlock(BlockID.MAGMA), "マグマブロック", "textures/blocks/magma", 50, 25);
-    private static final Content GLOWSTONE = new Content(Item.getBlock(BlockID.GLOWSTONE), "グロウストーン", "textures/blocks/glowstone", 50, 25);
-    private static final Content BASALT = new Content(Item.getBlock(BlockID.BASALT), "玄武岩", "textures/blocks/basalt_top", 30, 15);
+    private static final Content NETHER_BRICKS = new Content(Item.getBlock(BlockID.NETHER_BRICKS), "ネザーレンガのブロック", "textures/blocks/nether_brick", 30, 10);
+    private static final Content RED_NETHER_BRICK = new Content(Item.getBlock(BlockID.RED_NETHER_BRICK), "赤いネザーレンガ", "textures/blocks/red_nether_brick", 30, 10);
+    private static final Content MAGMA = new Content(Item.getBlock(BlockID.MAGMA), "マグマブロック", "textures/blocks/magma", 50, 15);
+    private static final Content GLOWSTONE = new Content(Item.getBlock(BlockID.GLOWSTONE), "グロウストーン", "textures/blocks/glowstone", 50, 15);
+    private static final Content BASALT = new Content(Item.getBlock(BlockID.BASALT), "玄武岩", "textures/blocks/basalt_top", 30, 10);
     private static final Content BLACKSTONE = new Content(Item.getBlock(BlockID.BLACKSTONE), "ブラックストーン", "textures/blocks/blackstone", 30, 15);
     private static final Content GLIDED_BLACKSTONE = new Content(Item.getBlock(BlockID.GILDED_BLACKSTONE), "金色のブラックストーン", "textures/blocks/gilded_blackstone", 300, 150);
     private static final Content NETHER_GOLD_ORE = new Content(Item.getBlock(BlockID.NETHER_GOLD_ORE), "ネザーゴールド鉱石", "textures/blocks/nether_gold_ore", 400, 200);
