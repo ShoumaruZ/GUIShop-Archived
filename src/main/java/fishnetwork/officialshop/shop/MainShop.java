@@ -224,20 +224,20 @@ public class MainShop {
 
     /** Block Nether Shop */
     private static final Content NETHER_RACK = new Content(Item.getBlock(BlockID.NETHERRACK), "ネザーレック", "textures/blocks/netherrack", 10, 3);
-    private static final Content SOUL_SAND = new Content(Item.getBlock(BlockID.SOUL_SAND), "ソウルサンド", "textures/blocks/soul_sand", 20, 10);
-    private static final Content SOUL_SOIL = new Content(Item.getBlock(BlockID.SOUL_SOIL), "魂の土壌", "textures/blocks/soul_soil", 30, 15);
+    private static final Content SOUL_SAND = new Content(Item.getBlock(BlockID.SOUL_SAND), "ソウルサンド", "textures/blocks/soul_sand", 15, 5);
+    private static final Content SOUL_SOIL = new Content(Item.getBlock(BlockID.SOUL_SOIL), "魂の土壌", "textures/blocks/soul_soil", 20, 10);
     private static final Content NETHER_BRICKS = new Content(Item.getBlock(BlockID.NETHER_BRICKS), "ネザーレンガのブロック", "textures/blocks/nether_brick", 30, 10);
     private static final Content RED_NETHER_BRICK = new Content(Item.getBlock(BlockID.RED_NETHER_BRICK), "赤いネザーレンガ", "textures/blocks/red_nether_brick", 30, 10);
-    private static final Content MAGMA = new Content(Item.getBlock(BlockID.MAGMA), "マグマブロック", "textures/blocks/magma", 50, 15);
-    private static final Content GLOWSTONE = new Content(Item.getBlock(BlockID.GLOWSTONE), "グロウストーン", "textures/blocks/glowstone", 50, 15);
-    private static final Content BASALT = new Content(Item.getBlock(BlockID.BASALT), "玄武岩", "textures/blocks/basalt_top", 30, 10);
-    private static final Content BLACKSTONE = new Content(Item.getBlock(BlockID.BLACKSTONE), "ブラックストーン", "textures/blocks/blackstone", 30, 15);
+    private static final Content MAGMA = new Content(Item.getBlock(BlockID.MAGMA), "マグマブロック", "textures/blocks/magma", 50, 10);
+    private static final Content GLOWSTONE = new Content(Item.getBlock(BlockID.GLOWSTONE), "グロウストーン", "textures/blocks/glowstone", 50, 10);
+    private static final Content BASALT = new Content(Item.getBlock(BlockID.BASALT), "玄武岩", "textures/blocks/basalt_top", 20, 5);
+    private static final Content BLACKSTONE = new Content(Item.getBlock(BlockID.BLACKSTONE), "ブラックストーン", "textures/blocks/blackstone", 20, 5);
     private static final Content GLIDED_BLACKSTONE = new Content(Item.getBlock(BlockID.GILDED_BLACKSTONE), "金色のブラックストーン", "textures/blocks/gilded_blackstone", 300, 150);
     private static final Content NETHER_GOLD_ORE = new Content(Item.getBlock(BlockID.NETHER_GOLD_ORE), "ネザーゴールド鉱石", "textures/blocks/nether_gold_ore", 400, 200);
     private static final Content CRYING_OBSIDIAN = new Content(Item.getBlock(BlockID.CRYING_OBSIDIAN), "泣く黒曜石", "textures/blocks/crying_obsidian", 50, 25);
     private static final Content SHROOMLIGHT = new Content(Item.getBlock(BlockID.SHROOMLIGHT), "きのこライト", "textures/blocks/shroomlight", 50, 25);
-    private static final Content CRIMSON_STEM = new Content(Item.getBlock(BlockID.CRIMSON_STEM), "幹(クリムゾン)", "textures/blocks/huge_fungus/crimson_log_top", 30, 15);
-    private static final Content CRIMSON_NYLIUM = new Content(Item.getBlock(BlockID.CRIMSON_NYLIUM), "二リウム(クリムゾン)", "textures/blocks/crimson_nylium_side", 30, 15);
+    private static final Content CRIMSON_STEM = new Content(Item.getBlock(BlockID.CRIMSON_STEM), "幹(クリムゾン)", "textures/blocks/huge_fungus/crimson_log_top", 25, 10);
+    private static final Content CRIMSON_NYLIUM = new Content(Item.getBlock(BlockID.CRIMSON_NYLIUM), "二リウム(クリムゾン)", "textures/blocks/crimson_nylium_side", 25, 10);
     private static final Content BLOCK_NETHER_WART_BLOCK = new Content(Item.getBlock(BlockID.BLOCK_NETHER_WART_BLOCK), "ネザーウォートブロック", "textures/blocks/nether_wart_block", 30, 15);
     private static final Content WEEPING_VINES = new Content(Item.getBlock(BlockID.WEEPING_VINES), "ウィーピングつた", "textures/blocks/weeping_vines_base", 25, 10);
     private static final Content WARPED_STEM = new Content(Item.getBlock(BlockID.WARPED_STEM), "ゆがんだ幹", "textures/blocks/huge_fungus/warped_stem_top", 30, 15);
