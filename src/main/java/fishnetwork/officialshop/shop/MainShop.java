@@ -14,6 +14,7 @@ import cn.nukkit.utils.DyeColor;
 import fishnetwork.officialshop.Content;
 import fishnetwork.officialshop.Shop;
 
+@SuppressWarnings("deprecation")
 public class MainShop {
 
 
@@ -198,9 +199,9 @@ public class MainShop {
     private static final Content PRISMARINE = new Content(Item.getBlock(BlockID.PRISMARINE), "海晶ブロック", "textures/blocks/prismarine_rough", 30, 15);
     private static final Content DARK_PRISMARINE = new Content(Item.getBlock(BlockID.PRISMARINE, BlockPrismarine.DARK), "暗海晶ブロック", "textures/blocks/prismarine_dark", 30, 15);
     private static final Content PRISMARINE_BRICKS = new Content(Item.getBlock(BlockID.PRISMARINE, BlockPrismarine.BRICKS), "海晶レンガ", "textures/blocks/prismarine_bricks", 30, 15);
-    private static final Content ICE = new Content(Item.getBlock(BlockID.ICE), "氷", "textures/blocks/ice", 50, 20);
-    private static final Content ICE_FROSTED = new Content(Item.getBlock(BlockID.ICE_FROSTED), "氷塊", "textures/blocks/ice_packed", 50, 20);
-    private static final Content BLUE_ICE = new Content(Item.getBlock(BlockID.BLUE_ICE), "青の氷", "textures/blocks/blue_ice", 50, 20);
+    private static final Content ICE = new Content(Item.getBlock(BlockID.ICE), "氷", "textures/blocks/ice", 25, 10);
+    private static final Content PACKED_ICE = new Content(Item.getBlock(BlockID.PACKED_ICE), "氷塊", "textures/blocks/ice_packed", 25, 10);
+    private static final Content BLUE_ICE = new Content(Item.getBlock(BlockID.BLUE_ICE), "青の氷", "textures/blocks/blue_ice", 30, 15);
 
 
     /** Block Coral Shop */
@@ -510,7 +511,7 @@ public class MainShop {
         .addElement(DARK_PRISMARINE)
         .addElement(PRISMARINE_BRICKS)
         .addElement(ICE)
-        .addElement(ICE_FROSTED)
+        .addElement(PACKED_ICE)
         .addElement(BLUE_ICE)
         .addElement(BLOCK_CORAL_SHOP);
     
