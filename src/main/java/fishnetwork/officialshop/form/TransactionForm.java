@@ -37,7 +37,7 @@ public class TransactionForm {
         form.send(player, (targetPlayer, targetForm, data) -> {
             if(data == null) return;
             if((boolean)data.get(ALL_SELL)) {
-                int amount = InventoryUtils.getItemAllCount(item, inventory);
+                int amount = (int)((float)InventoryUtils.getItemAllCount(item, inventory) / item.getCount());
                 int price = amount * content.getSell();
                 user.addMoney(price);
                 item.setCount(amount * item.getCount());
