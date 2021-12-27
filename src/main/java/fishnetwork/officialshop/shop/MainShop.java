@@ -279,7 +279,7 @@ public class MainShop {
     private static final Content SHULKER_SHELL = new Content(Item.get(ItemID.SHULKER_SHELL, 0, 2), "シュルカーの殻", "textures/items/shulker_shell", 5000, 1000);
     private static final Content ITEM_FRAME = new Content(Item.get(ItemID.ITEM_FRAME), "額縁", "textures/items/item_frame", 600, 200);
     private static final Content BELL = new Content(Item.getBlock(BlockID.BELL), "ベル", "textures/items/villagebell", 5000, 1000);
-    private static final Content EXPERIENCE_BOTTLE = new Content(Item.get(ItemID.EXPERIENCE_BOTTLE, 0, 16), "エンチャントの瓶", "textures/items/experience_bottle", 3000, 1000);
+    private static final Content EXPERIENCE_BOTTLE = new Content(Item.get(ItemID.EXPERIENCE_BOTTLE, 0, 16), "エンチャントの瓶", "textures/items/experience_bottle", 4000, 1000);
 
 
     private static final Shop WEAPON_SHOP = new Shop("武器", "textures/items/diamond_sword");
