@@ -25,8 +25,8 @@ public class MainShop {
     private static final Content QUARTZ = new Content(Item.get(ItemID.QUARTZ), "ネザークォーツ", "textures/items/quartz", 15, 10);
     private static final Content COAL = new Content(Item.get(ItemID.COAL), "石炭", "textures/items/coal", 20, 10);
     private static final Content COAL_BLOCK = new Content(Item.get(BlockID.COAL_BLOCK), "石炭ブロック", "textures/blocks/coal_block", 160, 100);
-    private static final Content REDSTONE = new Content(Item.get(ItemID.REDSTONE_DUST), "レッドストーンダスト", "textures/items/redstone_dust", 30, 15);
-    private static final Content REDSTONE_BLOCK = new Content(Item.getBlock(BlockID.REDSTONE_BLOCK), "レッドストーンブロック", "textures/blocks/redstone_block", 240, 150);
+    //private static final Content REDSTONE = new Content(Item.get(ItemID.REDSTONE_DUST), "レッドストーンダスト", "textures/items/redstone_dust", 30, 15);
+    //private static final Content REDSTONE_BLOCK = new Content(Item.getBlock(BlockID.REDSTONE_BLOCK), "レッドストーンブロック", "textures/blocks/redstone_block", 240, 150);
     private static final Content LAPIS = new Content(Item.get(ItemID.DYE, DyeColor.BLUE.getDyeData()), "ラピスラズリ", "textures/items/dye_powder_blue", 50, 25);
     private static final Content LAPIS_BLOCK = new Content(Item.getBlock(BlockID.LAPIS_BLOCK), "ラピスラズリブロック", "textures/blocks/lapis_block", 400, 250);
     private static final Content IRON = new Content(Item.get(ItemID.IRON_INGOT), "鉄インゴット", "textures/items/iron_ingot", 300, 150);
@@ -333,8 +333,8 @@ public class MainShop {
         .addElement(QUARTZ)
         .addElement(COAL)
         .addElement(COAL_BLOCK)
-        .addElement(REDSTONE)
-        .addElement(REDSTONE_BLOCK)
+        //.addElement(REDSTONE)
+        //.addElement(REDSTONE_BLOCK)
         .addElement(LAPIS)
         .addElement(LAPIS_BLOCK)
         .addElement(IRON)
