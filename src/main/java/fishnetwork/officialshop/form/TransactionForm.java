@@ -37,12 +37,13 @@ public class TransactionForm {
         form.send(player, (targetPlayer, targetForm, data) -> {
             if(data == null) return;
             if((boolean)data.get(ALL_SELL)) {
-                int amount = InventoryUtils.getItemAllCount(item, inventory);
+                int amount = (int)((float)InventoryUtils.getItemAllCount(item, inventory) / item.getCount());
                 int price = amount * content.getSell();
                 user.addMoney(price);
                 item.setCount(amount * item.getCount());
                 inventory.removeItem(item);
                 player.sendMessage(String.format("§7» §3Shop §7| §f%s§bを§f%s§b個売却しました(§e$%s§b)", item.getName(), item.getCount(), price));
+                parentShop.sendForm(player);
                 return;
             }
             if(!data.get(AMOUNT).toString().matches("[0-9]+")) {
@@ -50,25 +51,25 @@ public class TransactionForm {
                 return;
             }
             if((boolean)data.get(TYPE) || (boolean)data.get(ALL_SELL)) {
+                int amount = Integer.parseInt(data.get(AMOUNT).toString());
+                int price = amount * content.getSell();
+                item.setCount(amount * item.getCount());
                 if(!inventory.contains(item)) {
                     player.sendMessage("§7» §3Shop §7| §cアイテムが不足しています");
                     return;
                 }
-                int amount = Integer.parseInt(data.get(AMOUNT).toString());
-                int price = amount * content.getSell();
                 user.addMoney(price);
-                item.setCount(amount * item.getCount());
                 inventory.removeItem(item);
                 player.sendMessage(String.format("§7» §3Shop §7| §f%s§bを§f%s§b個売却しました(§e$%s§b)", item.getName(), item.getCount(), price));
             }else{
+                int amount = Integer.parseInt(data.get(AMOUNT).toString());
+                int price = amount * content.getBuy();
+                item.setCount(amount * item.getCount());
                 if(!inventory.canAddItem(item)) {
                     player.sendMessage("§7» §3Shop §7| §c空きスロットが不足しています");
                     return;
                 }
-                int amount = Integer.parseInt(data.get(AMOUNT).toString());
-                int price = amount * content.getBuy();
                 try {
-                    item.setCount(amount * item.getCount());
                     user.reduceMoney(price);
                     inventory.addItem(item);
                     player.sendMessage(String.format("§7» §3Shop §7| §f%s§bを§f%s§b個購入しました(§e$%s§b)", item.getName(), item.getCount(), price));

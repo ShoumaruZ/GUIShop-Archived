@@ -14,6 +14,7 @@ import cn.nukkit.utils.DyeColor;
 import fishnetwork.officialshop.Content;
 import fishnetwork.officialshop.Shop;
 
+@SuppressWarnings("deprecation")
 public class MainShop {
 
 
@@ -24,8 +25,8 @@ public class MainShop {
     private static final Content QUARTZ = new Content(Item.get(ItemID.QUARTZ), "ネザークォーツ", "textures/items/quartz", 15, 10);
     private static final Content COAL = new Content(Item.get(ItemID.COAL), "石炭", "textures/items/coal", 20, 10);
     private static final Content COAL_BLOCK = new Content(Item.get(BlockID.COAL_BLOCK), "石炭ブロック", "textures/blocks/coal_block", 160, 100);
-    private static final Content REDSTONE = new Content(Item.get(ItemID.REDSTONE_DUST), "レッドストーンダスト", "textures/items/redstone_dust", 30, 15);
-    private static final Content REDSTONE_BLOCK = new Content(Item.getBlock(BlockID.REDSTONE_BLOCK), "レッドストーンブロック", "textures/blocks/redstone_block", 240, 150);
+    //private static final Content REDSTONE = new Content(Item.get(ItemID.REDSTONE_DUST), "レッドストーンダスト", "textures/items/redstone_dust", 30, 15);
+    //private static final Content REDSTONE_BLOCK = new Content(Item.getBlock(BlockID.REDSTONE_BLOCK), "レッドストーンブロック", "textures/blocks/redstone_block", 240, 150);
     private static final Content LAPIS = new Content(Item.get(ItemID.DYE, DyeColor.BLUE.getDyeData()), "ラピスラズリ", "textures/items/dye_powder_blue", 50, 25);
     private static final Content LAPIS_BLOCK = new Content(Item.getBlock(BlockID.LAPIS_BLOCK), "ラピスラズリブロック", "textures/blocks/lapis_block", 400, 250);
     private static final Content IRON = new Content(Item.get(ItemID.IRON_INGOT), "鉄インゴット", "textures/items/iron_ingot", 300, 150);
@@ -198,9 +199,9 @@ public class MainShop {
     private static final Content PRISMARINE = new Content(Item.getBlock(BlockID.PRISMARINE), "海晶ブロック", "textures/blocks/prismarine_rough", 30, 15);
     private static final Content DARK_PRISMARINE = new Content(Item.getBlock(BlockID.PRISMARINE, BlockPrismarine.DARK), "暗海晶ブロック", "textures/blocks/prismarine_dark", 30, 15);
     private static final Content PRISMARINE_BRICKS = new Content(Item.getBlock(BlockID.PRISMARINE, BlockPrismarine.BRICKS), "海晶レンガ", "textures/blocks/prismarine_bricks", 30, 15);
-    private static final Content ICE = new Content(Item.getBlock(BlockID.ICE), "氷", "textures/blocks/ice", 50, 20);
-    private static final Content ICE_FROSTED = new Content(Item.getBlock(BlockID.ICE_FROSTED), "氷塊", "textures/blocks/ice_packed", 50, 20);
-    private static final Content BLUE_ICE = new Content(Item.getBlock(BlockID.BLUE_ICE), "青の氷", "textures/blocks/blue_ice", 50, 20);
+    private static final Content ICE = new Content(Item.getBlock(BlockID.ICE), "氷", "textures/blocks/ice", 25, 10);
+    private static final Content PACKED_ICE = new Content(Item.getBlock(BlockID.PACKED_ICE), "氷塊", "textures/blocks/ice_packed", 25, 10);
+    private static final Content BLUE_ICE = new Content(Item.getBlock(BlockID.BLUE_ICE), "青の氷", "textures/blocks/blue_ice", 30, 15);
 
 
     /** Block Coral Shop */
@@ -224,20 +225,20 @@ public class MainShop {
 
     /** Block Nether Shop */
     private static final Content NETHER_RACK = new Content(Item.getBlock(BlockID.NETHERRACK), "ネザーレック", "textures/blocks/netherrack", 10, 3);
-    private static final Content SOUL_SAND = new Content(Item.getBlock(BlockID.SOUL_SAND), "ソウルサンド", "textures/blocks/soul_sand", 20, 10);
-    private static final Content SOUL_SOIL = new Content(Item.getBlock(BlockID.SOUL_SOIL), "魂の土壌", "textures/blocks/soul_soil", 30, 15);
-    private static final Content NETHER_BRICKS = new Content(Item.getBlock(BlockID.NETHER_BRICKS), "ネザーレンガのブロック", "textures/blocks/nether_brick", 30, 15);
-    private static final Content RED_NETHER_BRICK = new Content(Item.getBlock(BlockID.RED_NETHER_BRICK), "赤いネザーレンガ", "textures/blocks/red_nether_brick", 30, 15);
-    private static final Content MAGMA = new Content(Item.getBlock(BlockID.MAGMA), "マグマブロック", "textures/blocks/magma", 50, 25);
-    private static final Content GLOWSTONE = new Content(Item.getBlock(BlockID.GLOWSTONE), "グロウストーン", "textures/blocks/glowstone", 50, 25);
-    private static final Content BASALT = new Content(Item.getBlock(BlockID.BASALT), "玄武岩", "textures/blocks/basalt_top", 30, 15);
-    private static final Content BLACKSTONE = new Content(Item.getBlock(BlockID.BLACKSTONE), "ブラックストーン", "textures/blocks/blackstone", 30, 15);
+    private static final Content SOUL_SAND = new Content(Item.getBlock(BlockID.SOUL_SAND), "ソウルサンド", "textures/blocks/soul_sand", 15, 5);
+    private static final Content SOUL_SOIL = new Content(Item.getBlock(BlockID.SOUL_SOIL), "魂の土壌", "textures/blocks/soul_soil", 20, 10);
+    private static final Content NETHER_BRICKS = new Content(Item.getBlock(BlockID.NETHER_BRICKS), "ネザーレンガのブロック", "textures/blocks/nether_brick", 30, 10);
+    private static final Content RED_NETHER_BRICK = new Content(Item.getBlock(BlockID.RED_NETHER_BRICK), "赤いネザーレンガ", "textures/blocks/red_nether_brick", 30, 10);
+    private static final Content MAGMA = new Content(Item.getBlock(BlockID.MAGMA), "マグマブロック", "textures/blocks/magma", 50, 10);
+    private static final Content GLOWSTONE = new Content(Item.getBlock(BlockID.GLOWSTONE), "グロウストーン", "textures/blocks/glowstone", 50, 10);
+    private static final Content BASALT = new Content(Item.getBlock(BlockID.BASALT), "玄武岩", "textures/blocks/basalt_top", 20, 5);
+    private static final Content BLACKSTONE = new Content(Item.getBlock(BlockID.BLACKSTONE), "ブラックストーン", "textures/blocks/blackstone", 20, 5);
     private static final Content GLIDED_BLACKSTONE = new Content(Item.getBlock(BlockID.GILDED_BLACKSTONE), "金色のブラックストーン", "textures/blocks/gilded_blackstone", 300, 150);
     private static final Content NETHER_GOLD_ORE = new Content(Item.getBlock(BlockID.NETHER_GOLD_ORE), "ネザーゴールド鉱石", "textures/blocks/nether_gold_ore", 400, 200);
     private static final Content CRYING_OBSIDIAN = new Content(Item.getBlock(BlockID.CRYING_OBSIDIAN), "泣く黒曜石", "textures/blocks/crying_obsidian", 50, 25);
     private static final Content SHROOMLIGHT = new Content(Item.getBlock(BlockID.SHROOMLIGHT), "きのこライト", "textures/blocks/shroomlight", 50, 25);
-    private static final Content CRIMSON_STEM = new Content(Item.getBlock(BlockID.CRIMSON_STEM), "幹(クリムゾン)", "textures/blocks/huge_fungus/crimson_log_top", 30, 15);
-    private static final Content CRIMSON_NYLIUM = new Content(Item.getBlock(BlockID.CRIMSON_NYLIUM), "二リウム(クリムゾン)", "textures/blocks/crimson_nylium_side", 30, 15);
+    private static final Content CRIMSON_STEM = new Content(Item.getBlock(BlockID.CRIMSON_STEM), "幹(クリムゾン)", "textures/blocks/huge_fungus/crimson_log_top", 25, 10);
+    private static final Content CRIMSON_NYLIUM = new Content(Item.getBlock(BlockID.CRIMSON_NYLIUM), "二リウム(クリムゾン)", "textures/blocks/crimson_nylium_side", 25, 10);
     private static final Content BLOCK_NETHER_WART_BLOCK = new Content(Item.getBlock(BlockID.BLOCK_NETHER_WART_BLOCK), "ネザーウォートブロック", "textures/blocks/nether_wart_block", 30, 15);
     private static final Content WEEPING_VINES = new Content(Item.getBlock(BlockID.WEEPING_VINES), "ウィーピングつた", "textures/blocks/weeping_vines_base", 25, 10);
     private static final Content WARPED_STEM = new Content(Item.getBlock(BlockID.WARPED_STEM), "ゆがんだ幹", "textures/blocks/huge_fungus/warped_stem_top", 30, 15);
@@ -278,6 +279,7 @@ public class MainShop {
     private static final Content SHULKER_SHELL = new Content(Item.get(ItemID.SHULKER_SHELL, 0, 2), "シュルカーの殻", "textures/items/shulker_shell", 5000, 1000);
     private static final Content ITEM_FRAME = new Content(Item.get(ItemID.ITEM_FRAME), "額縁", "textures/items/item_frame", 600, 200);
     private static final Content BELL = new Content(Item.getBlock(BlockID.BELL), "ベル", "textures/items/villagebell", 5000, 1000);
+    private static final Content EXPERIENCE_BOTTLE = new Content(Item.get(ItemID.EXPERIENCE_BOTTLE, 0, 16), "エンチャントの瓶", "textures/items/experience_bottle", 4000, 1000);
 
 
     private static final Shop WEAPON_SHOP = new Shop("武器", "textures/items/diamond_sword");
@@ -331,8 +333,8 @@ public class MainShop {
         .addElement(QUARTZ)
         .addElement(COAL)
         .addElement(COAL_BLOCK)
-        .addElement(REDSTONE)
-        .addElement(REDSTONE_BLOCK)
+        //.addElement(REDSTONE)
+        //.addElement(REDSTONE_BLOCK)
         .addElement(LAPIS)
         .addElement(LAPIS_BLOCK)
         .addElement(IRON)
@@ -510,7 +512,7 @@ public class MainShop {
         .addElement(DARK_PRISMARINE)
         .addElement(PRISMARINE_BRICKS)
         .addElement(ICE)
-        .addElement(ICE_FROSTED)
+        .addElement(PACKED_ICE)
         .addElement(BLUE_ICE)
         .addElement(BLOCK_CORAL_SHOP);
     
@@ -584,6 +586,7 @@ public class MainShop {
         RARE_SHOP
         .addElement(ITEM_FRAME)
         .addElement(SHULKER_SHELL)
+        .addElement(EXPERIENCE_BOTTLE)
         .addElement(BELL);
     }
 
