@@ -104,7 +104,7 @@ public class MainShop {
     private static final Content SUGARCANE = new Content(Item.get(ItemID.SUGARCANE), "サトウキビ", "textures/items/reeds", 25, 5);
     private static final Content BAMBOO = new Content(Item.getBlock(BlockID.BAMBOO), "竹", "textures/items/bamboo", 25, 5);
     private static final Content KELP = new Content(Item.get(ItemID.KELP), "昆布", "textures/items/kelp", 25, 5);
-    private static final Content CACAO = new Content(Item.get(ItemID.DYE, DyeColor.BROWN.getDyeData()), "ココアビーンズ", "textures/items/dye_powder_brown", 25, 10);
+    private static final Content CACAO = new Content(Item.get(ItemID.DYE, DyeColor.BROWN.getDyeData()), "ココアビーンズ", "textures/items/dye_powder_brown", 25, 5);
     private static final Content SWEET_BERRIES = new Content(Item.get(ItemID.SWEET_BERRIES), "スイートベリー", "textures/items/sweet_berries", 15, 5);
     private static final Content RED_MUSHROOM = new Content(Item.getBlock(BlockID.RED_MUSHROOM), "キノコ(赤)", "textures/blocks/mushroom_red", 50, 30);
     private static final Content BROWN_MUSHROOM = new Content(Item.getBlock(BlockID.BROWN_MUSHROOM), "きのこ(茶色)", "textures/blocks/mushroom_brown", 50, 30);
@@ -124,7 +124,7 @@ public class MainShop {
     private static final Content COOKED_FISH = new Content(Item.get(ItemID.COOKED_FISH), "焼いたタラ", "textures/items/fish_cooked", 25, 20);
     private static final Content COOKED_SALMON = new Content(Item.get(ItemID.COOKED_SALMON), "調理した鮭", "textures/items/fish_salmon_cooked", 30, 20);
     private static final Content DRIED_KELP = new Content(Item.get(ItemID.DRIED_KELP), "乾燥昆布", "textures/items/dried_kelp", 5, 5);
-    private static final Content COOKIE = new Content(Item.get(ItemID.COOKIE), "クッキー", "textures/items/cookie", 10, 10);
+    private static final Content COOKIE = new Content(Item.get(ItemID.COOKIE), "クッキー", "textures/items/cookie", 10, 5);
     private static final Content MUSHROOM_STEW = new Content(Item.get(ItemID.MUSHROOM_STEW), "きのこシチュー", "textures/items/mushroom_stew", 30, 25);
     private static final Content BEETROOT_SOUP = new Content(Item.get(ItemID.BEETROOT_SOUP), "ビートルートスープ", "textures/items/beetroot_soup", 30, 25);
     private static final Content RABBIT_STEW = new Content(Item.get(ItemID.RABBIT_STEW), "ウサギシチュー", "textures/items/rabbit_stew", 30, 30);
