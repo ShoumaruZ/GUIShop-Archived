@@ -1,0 +1,104 @@
+name: block/coral
+elements:
+  10:
+    type: PRODUCT
+    item:
+      material: TUBE_CORAL_FAN
+    price:
+      buy: 20
+  19:
+    type: PRODUCT
+    item:
+      material: TUBE_CORAL
+    price:
+      buy: 20
+  28:
+    type: PRODUCT
+    item:
+      material: TUBE_CORAL_BLOCK
+    price:
+      buy: 30
+  11:
+    type: PRODUCT
+    item:
+      material: BRAIN_CORAL_FAN
+    price:
+      buy: 20
+  20:
+    type: PRODUCT
+    item:
+      material: BRAIN_CORAL
+    price:
+      buy: 20
+  29:
+    type: PRODUCT
+    item:
+      material: BRAIN_CORAL_BLOCK
+    price:
+      buy: 30
+  12:
+    type: PRODUCT
+    item:
+      material: BUBBLE_CORAL_FAN
+    price:
+      buy: 20
+  21:
+    type: PRODUCT
+    item:
+      material: BUBBLE_CORAL
+    price:
+      buy: 20
+  30:
+    type: PRODUCT
+    item:
+      material: BUBBLE_CORAL_BLOCK
+    price:
+      buy: 30
+  13:
+    type: PRODUCT
+    item:
+      material: FIRE_CORAL_FAN
+    price:
+      buy: 20
+  22:
+    type: PRODUCT
+    item:
+      material: FIRE_CORAL
+    price:
+      buy: 20
+  31:
+    type: PRODUCT
+    item:
+      material: FIRE_CORAL_BLOCK
+    price:
+      buy: 30
+  14:
+    type: PRODUCT
+    item:
+      material: HORN_CORAL_FAN
+    price:
+      buy: 20
+  23:
+    type: PRODUCT
+    item:
+      material: HORN_CORAL
+    price:
+      buy: 20
+  32:
+    type: PRODUCT
+    item:
+      material: HORN_CORAL_BLOCK
+    price:
+      buy: 30
+  16:
+    type: PRODUCT
+    item:
+      material: SEAGRASS
+    price:
+      buy: 20
+  43:
+    type: CATEGORY
+    item:
+      material: BARRIER
+      display_name: "&c戻る"
+    category: sea

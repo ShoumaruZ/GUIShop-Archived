@@ -1,0 +1,104 @@
+name: food
+elements:
+  10:
+    type: PRODUCT
+    item:
+      material: COOKED_CHICKEN
+    price:
+      buy: 30
+  11:
+    type: PRODUCT
+    item:
+      material: COOKED_PORKCHOP
+    price:
+      buy: 35
+  12:
+    type: PRODUCT
+    item:
+      material: COOKED_BEEF
+    price:
+      buy: 35
+  13:
+    type: PRODUCT
+    item:
+      material: COOKED_MUTTON
+    price:
+      buy: 30
+  14:
+    type: PRODUCT
+    item:
+      material: COOKED_RABBIT
+    price:
+      buy: 30
+  16:
+    type: PRODUCT
+    item:
+      material: CAKE
+    price:
+      buy: 100
+  19:
+    type: PRODUCT
+    item:
+      material: BREAD
+    price:
+      buy: 25
+  20:
+    type: PRODUCT
+    item:
+      material: BAKED_POTATO
+    price:
+      buy: 25
+  21:
+    type: PRODUCT
+    item:
+      material: COOKIE
+    price:
+      buy: 10
+  22:
+    type: PRODUCT
+    item:
+      material: PUMPKIN_PIE
+    price:
+      buy: 35
+  28:
+    type: PRODUCT
+    item:
+      material: COOKED_COD
+    price:
+      buy: 25
+  29:
+    type: PRODUCT
+    item:
+      material: COOKED_SALMON
+    price:
+      buy: 30
+  37:
+    type: PRODUCT
+    item:
+      material: MUSHROOM_STEW
+    price:
+      buy: 30
+  38:
+    type: PRODUCT
+    item:
+      material: BEETROOT_SOUP
+    price:
+      buy: 30
+  39:
+    type: PRODUCT
+    item:
+      material: RABBIT_STEW
+    price:
+      buy: 35
+  41:
+    type: PRODUCT
+    item:
+      material: DRIED_KELP
+    price:
+      buy: 5
+  43:
+    type: CATEGORY
+    item:
+      material: BARRIER
+      display_name: "&c戻る"
+    category: main

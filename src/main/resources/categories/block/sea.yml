@@ -1,0 +1,56 @@
+name: block/sea
+elements:
+  10:
+    type: PRODUCT
+    item:
+      material: PRISMARINE
+    price:
+      buy: 30
+  11:
+    type: PRODUCT
+    item:
+      material: DARK_PRISMARINE
+    price:
+      buy: 30
+  12:
+    type: PRODUCT
+    item:
+      material: PRISMARINE_BRICKS
+    price:
+      buy: 30
+  14:
+    type: PRODUCT
+    item:
+      material: SEA_LANTERN
+    price:
+      buy: 50
+  19:
+    type: PRODUCT
+    item:
+      material: ICE
+    price:
+      buy: 25
+  20:
+    type: PRODUCT
+    item:
+      material: FROSTED_ICE
+    price:
+      buy: 25
+  21:
+    type: PRODUCT
+    item:
+      material: BLUE_ICE
+    price:
+      buy: 30
+  16:
+    type: CATEGORY
+    item:
+      material: FIRE_CORAL
+      display_name: "&lサンゴ"
+    category: coral
+  43:
+    type: CATEGORY
+    item:
+      material: BARRIER
+      display_name: "&c戻る"
+    category: block

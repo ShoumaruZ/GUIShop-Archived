@@ -1,0 +1,109 @@
+name: farm
+elements:
+  10:
+    type: PRODUCT
+    item:
+      material: WHEAT
+    price:
+      buy: 15
+      sell: 10
+  11:
+    type: PRODUCT
+    item:
+      material: PUMPKIN
+    price:
+      buy: 25
+      sell: 5
+  12:
+    type: PRODUCT
+    item:
+      material: MELON
+    price:
+      buy: 25
+      sell: 5
+  13:
+    type: PRODUCT
+    item:
+      material: BEETROOT
+    price:
+      buy: 15
+      sell: 10
+  14:
+    type: PRODUCT
+    item:
+      material: POTATO
+    price:
+      buy: 15
+      sell: 10
+  23:
+    type: PRODUCT
+    item:
+      material: CARROT
+    price:
+      buy: 15
+      sell: 10
+  19:
+    type: PRODUCT
+    item:
+      material: WHEAT_SEEDS
+    price:
+      buy: 5
+  20:
+    type: PRODUCT
+    item:
+      material: PUMPKIN_SEEDS
+    price:
+      buy: 5
+  21:
+    type: PRODUCT
+    item:
+      material: MELON_SEEDS
+    price:
+      buy: 5
+  22:
+    type: PRODUCT
+    item:
+      material: BEETROOT_SEEDS
+    price:
+      buy: 5
+  16:
+    type: PRODUCT
+    item:
+      material: COCOA_BEANS
+    price:
+      buy: 25
+      sell: 5
+  37:
+    type: PRODUCT
+    item:
+      material: SUGAR_CANE
+    price:
+      buy: 25
+      sell: 5
+  38:
+    type: PRODUCT
+    item:
+      material: BAMBOO
+    price:
+      buy: 25
+      sell: 5
+  40:
+    type: PRODUCT
+    item:
+      material: SWEET_BERRIES
+    price:
+      buy: 15
+      sell: 5
+  41:
+    type: PRODUCT
+    item:
+      material: GLOW_BERRIES
+    price:
+      buy: 15
+      sell: 5
+  43:
+    type: CATEGORY
+    item:
+      material: BARRIER
+      display_name: "&c戻る"
+    category: main

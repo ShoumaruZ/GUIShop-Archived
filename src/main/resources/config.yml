@@ -1,0 +1,8 @@
+#メインカテゴリの名前
+main_category: main
+
+#背景のアイテム
+background_item:
+  material: LIGHT_GRAY_STAINED_GLASS_PANE
+  amount: 1
+  display_name: " "

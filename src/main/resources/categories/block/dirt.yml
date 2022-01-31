@@ -1,0 +1,62 @@
+name: block/dirt
+elements:
+  10:
+    type: PRODUCT
+    item:
+      material: DIRT
+    price:
+      buy: 10
+      sell: 5
+  11:
+    type: PRODUCT
+    item:
+      material: GRASS_BLOCK
+    price:
+      buy: 15
+      sell: 10
+  12:
+    type: PRODUCT
+    item:
+      material: PODZOL
+    price:
+      buy: 25
+  13:
+    type: PRODUCT
+    item:
+      material: MYCELIUM
+    price:
+      buy: 25
+  19:
+    type: PRODUCT
+    item:
+      material: GRAVEL
+    price:
+      buy: 10
+      sell: 3
+  20:
+    type: PRODUCT
+    item:
+      material: SAND
+    price:
+      buy: 10
+      sell: 3
+  21:
+    type: PRODUCT
+    item:
+      material: RED_SAND
+    price:
+      buy: 15
+      sell: 5
+  16:
+    type: PRODUCT
+    item:
+      material: SNOW_BLOCK
+    price:
+      buy: 20
+      sell: 5
+  43:
+    type: CATEGORY
+    item:
+      material: BARRIER
+      display_name: "&c戻る"
+    category: block

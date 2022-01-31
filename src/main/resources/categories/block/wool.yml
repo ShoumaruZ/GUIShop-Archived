@@ -1,0 +1,120 @@
+name: block/wool
+elements:
+  10:
+    type: PRODUCT
+    item:
+      material: WHITE_WOOL
+    price:
+      buy: 30
+      sell: 10
+  11:
+    type: PRODUCT
+    item:
+      material: LIGHT_GRAY_WOOL
+    price:
+      buy: 30
+      sell: 10
+  12:
+    type: PRODUCT
+    item:
+      material: GRAY_WOOL
+    price:
+      buy: 30
+      sell: 10
+  13:
+    type: PRODUCT
+    item:
+      material: BLACK_WOOL
+    price:
+      buy: 30
+      sell: 10
+  14:
+    type: PRODUCT
+    item:
+      material: BROWN_WOOL
+    price:
+      buy: 30
+      sell: 10
+  15:
+    type: PRODUCT
+    item:
+      material: RED_WOOL
+    price:
+      buy: 30
+      sell: 10
+  16:
+    type: PRODUCT
+    item:
+      material: ORANGE_WOOL
+    price:
+      buy: 30
+      sell: 10
+  19:
+    type: PRODUCT
+    item:
+      material: YELLOW_WOOL
+    price:
+      buy: 30
+      sell: 10
+  20:
+    type: PRODUCT
+    item:
+      material: LIME_WOOL
+    price:
+      buy: 30
+      sell: 10
+  21:
+    type: PRODUCT
+    item:
+      material: GREEN_WOOL
+    price:
+      buy: 30
+      sell: 10
+  22:
+    type: PRODUCT
+    item:
+      material: CYAN_WOOL
+    price:
+      buy: 30
+      sell: 10
+  23:
+    type: PRODUCT
+    item:
+      material: LIGHT_BLUE_WOOL
+    price:
+      buy: 30
+      sell: 10
+  24:
+    type: PRODUCT
+    item:
+      material: BLUE_WOOL
+    price:
+      buy: 30
+      sell: 10
+  25:
+    type: PRODUCT
+    item:
+      material: PURPLE_WOOL
+    price:
+      buy: 30
+      sell: 10
+  28:
+    type: PRODUCT
+    item:
+      material: MAGENTA_WOOL
+    price:
+      buy: 30
+      sell: 10
+  29:
+    type: PRODUCT
+    item:
+      material: PINK_WOOL
+    price:
+      buy: 30
+      sell: 10
+  43:
+    type: CATEGORY
+    item:
+      material: BARRIER
+      display_name: "&c戻る"
+    category: block

@@ -1,0 +1,104 @@
+name: block/wood
+elements:
+  10:
+    type: PRODUCT
+    item:
+      material: OAK_LOG
+    price:
+      buy: 15
+      sell: 10
+  11:
+    type: PRODUCT
+    item:
+      material: SPRUCE_LOG
+    price:
+      buy: 15
+      sell: 10
+  12:
+    type: PRODUCT
+    item:
+      material: BIRCH_LOG
+    price:
+      buy: 15
+      sell: 10
+  13:
+    type: PRODUCT
+    item:
+      material: JUNGLE_LOG
+    price:
+      buy: 15
+      sell: 10
+  14:
+    type: PRODUCT
+    item:
+      material: ACACIA_LOG
+    price:
+      buy: 15
+      sell: 10
+  15:
+    type: PRODUCT
+    item:
+      material: DARK_OAK_LOG
+    price:
+      buy: 15
+      sell: 10
+  19:
+    type: PRODUCT
+    item:
+      material: STRIPPED_OAK_LOG
+    price:
+      buy: 15
+      sell: 10
+  20:
+    type: PRODUCT
+    item:
+      material: STRIPPED_SPRUCE_LOG
+    price:
+      buy: 15
+      sell: 10
+  21:
+    type: PRODUCT
+    item:
+      material: STRIPPED_BIRCH_LOG
+    price:
+      buy: 15
+      sell: 10
+  22:
+    type: PRODUCT
+    item:
+      material: STRIPPED_JUNGLE_LOG
+    price:
+      buy: 15
+      sell: 10
+  23:
+    type: PRODUCT
+    item:
+      material: STRIPPED_ACACIA_LOG
+    price:
+      buy: 15
+      sell: 10
+  24:
+    type: PRODUCT
+    item:
+      material: STRIPPED_DARK_OAK_LOG
+    price:
+      buy: 15
+      sell: 10
+  37:
+    type: PRODUCT
+    item:
+      material: LADDER
+    price:
+      buy: 10
+  38:
+    type: PRODUCT
+    item:
+      material: SCAFFOLDING
+    price:
+      buy: 30
+  43:
+    type: CATEGORY
+    item:
+      material: BARRIER
+      display_name: "&c戻る"
+    category: block

@@ -1,0 +1,120 @@
+name: dye
+elements:
+  10:
+    type: PRODUCT
+    item:
+      material: WHITE_DYE
+    price:
+      buy: 25
+      sell: 3
+  11:
+    type: PRODUCT
+    item:
+      material: LIGHT_GRAY_DYE
+    price:
+      buy: 25
+      sell: 3
+  12:
+    type: PRODUCT
+    item:
+      material: GRAY_DYE
+    price:
+      buy: 25
+      sell: 3
+  13:
+    type: PRODUCT
+    item:
+      material: BLACK_DYE
+    price:
+      buy: 25
+      sell: 3
+  14:
+    type: PRODUCT
+    item:
+      material: BROWN_DYE
+    price:
+      buy: 25
+      sell: 3
+  15:
+    type: PRODUCT
+    item:
+      material: RED_DYE
+    price:
+      buy: 25
+      sell: 3
+  16:
+    type: PRODUCT
+    item:
+      material: ORANGE_DYE
+    price:
+      buy: 25
+      sell: 3
+  19:
+    type: PRODUCT
+    item:
+      material: YELLOW_DYE
+    price:
+      buy: 25
+      sell: 3
+  20:
+    type: PRODUCT
+    item:
+      material: LIME_DYE
+    price:
+      buy: 25
+      sell: 3
+  21:
+    type: PRODUCT
+    item:
+      material: GREEN_DYE
+    price:
+      buy: 25
+      sell: 3
+  22:
+    type: PRODUCT
+    item:
+      material: CYAN_DYE
+    price:
+      buy: 25
+      sell: 3
+  23:
+    type: PRODUCT
+    item:
+      material: LIGHT_BLUE_DYE
+    price:
+      buy: 25
+      sell: 3
+  24:
+    type: PRODUCT
+    item:
+      material: BLUE_DYE
+    price:
+      buy: 25
+      sell: 3
+  25:
+    type: PRODUCT
+    item:
+      material: PURPLE_DYE
+    price:
+      buy: 25
+      sell: 3
+  28:
+    type: PRODUCT
+    item:
+      material: MAGENTA_DYE
+    price:
+      buy: 25
+      sell: 3
+  29:
+    type: PRODUCT
+    item:
+      material: PINK_DYE
+    price:
+      buy: 25
+      sell: 3
+  43:
+    type: CATEGORY
+    item:
+      material: BARRIER
+      display_name: "&c戻る"
+    category: main

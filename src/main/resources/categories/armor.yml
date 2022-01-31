@@ -1,0 +1,140 @@
+name: armor
+elements:
+  10:
+    type: PRODUCT
+    item:
+      material: LEATHER_HELMET
+    price:
+      buy: 500
+  19:
+    type: PRODUCT
+    item:
+      material: LEATHER_CHESTPLATE
+    price:
+      buy: 800
+  28:
+    type: PRODUCT
+    item:
+      material: LEATHER_LEGGINGS
+    price:
+      buy: 700
+  37:
+    type: PRODUCT
+    item:
+      material: LEATHER_BOOTS
+    price:
+      buy: 400
+  11:
+    type: PRODUCT
+    item:
+      material: CHAINMAIL_HELMET
+    price:
+      buy: 1000
+  20:
+    type: PRODUCT
+    item:
+      material: CHAINMAIL_CHESTPLATE
+    price:
+      buy: 1600
+  29:
+    type: PRODUCT
+    item:
+      material: CHAINMAIL_LEGGINGS
+    price:
+      buy: 1400
+  38:
+    type: PRODUCT
+    item:
+      material: CHAINMAIL_BOOTS
+    price:
+      buy: 800
+  12:
+    type: PRODUCT
+    item:
+      material: IRON_HELMET
+    price:
+      buy: 1500
+  21:
+    type: PRODUCT
+    item:
+      material: IRON_CHESTPLATE
+    price:
+      buy: 2400
+  30:
+    type: PRODUCT
+    item:
+      material: IRON_LEGGINGS
+    price:
+      buy: 2100
+  39:
+    type: PRODUCT
+    item:
+      material: IRON_BOOTS
+    price:
+      buy: 1200
+  13:
+    type: PRODUCT
+    item:
+      material: GOLDEN_HELMET
+    price:
+      buy: 2000
+  22:
+    type: PRODUCT
+    item:
+      material: GOLDEN_CHESTPLATE
+    price:
+      buy: 3200
+  31:
+    type: PRODUCT
+    item:
+      material: GOLDEN_LEGGINGS
+    price:
+      buy: 2800
+  40:
+    type: PRODUCT
+    item:
+      material: GOLDEN_BOOTS
+    price:
+      buy: 1600
+  14:
+    type: PRODUCT
+    item:
+      material: DIAMOND_HELMET
+    price:
+      buy: 7000
+  23:
+    type: PRODUCT
+    item:
+      material: DIAMOND_CHESTPLATE
+    price:
+      buy: 11200
+  32:
+    type: PRODUCT
+    item:
+      material: DIAMOND_LEGGINGS
+    price:
+      buy: 9800
+  41:
+    type: PRODUCT
+    item:
+      material: DIAMOND_BOOTS
+    price:
+      buy: 5600
+  16:
+    type: PRODUCT
+    item:
+      material: BOW
+    price:
+      buy: 600
+  25:
+    type: PRODUCT
+    item:
+      material: ARROW
+    price:
+      buy: 200
+  43:
+    type: CATEGORY
+    item:
+      material: BARRIER
+      display_name: "&c戻る"
+    category: weapon

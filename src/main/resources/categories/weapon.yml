@@ -1,0 +1,134 @@
+name: weapon
+elements:
+  10:
+    type: PRODUCT
+    item:
+      material: WOODEN_SWORD
+    price:
+      buy: 10
+  19:
+    type: PRODUCT
+    item:
+      material: WOODEN_PICKAXE
+    price:
+      buy: 10
+  28:
+    type: PRODUCT
+    item:
+      material: WOODEN_SHOVEL
+    price:
+      buy: 10
+  37:
+    type: PRODUCT
+    item:
+      material: WOODEN_AXE
+    price:
+      buy: 10
+  11:
+    type: PRODUCT
+    item:
+      material: STONE_SWORD
+    price:
+      buy: 20
+  20:
+    type: PRODUCT
+    item:
+      material: STONE_PICKAXE
+    price:
+      buy: 20
+  29:
+    type: PRODUCT
+    item:
+      material: STONE_SHOVEL
+    price:
+      buy: 20
+  38:
+    type: PRODUCT
+    item:
+      material: STONE_AXE
+    price:
+      buy: 20
+  12:
+    type: PRODUCT
+    item:
+      material: IRON_SWORD
+    price:
+      buy: 600
+  21:
+    type: PRODUCT
+    item:
+      material: IRON_PICKAXE
+    price:
+      buy: 900
+  30:
+    type: PRODUCT
+    item:
+      material: IRON_SHOVEL
+    price:
+      buy: 300
+  39:
+    type: PRODUCT
+    item:
+      material: IRON_AXE
+    price:
+      buy: 900
+  13:
+    type: PRODUCT
+    item:
+      material: GOLDEN_SWORD
+    price:
+      buy: 800
+  22:
+    type: PRODUCT
+    item:
+      material: GOLDEN_PICKAXE
+    price:
+      buy: 1200
+  31:
+    type: PRODUCT
+    item:
+      material: GOLDEN_SHOVEL
+    price:
+      buy: 400
+  40:
+    type: PRODUCT
+    item:
+      material: GOLDEN_AXE
+    price:
+      buy: 1200
+  14:
+    type: PRODUCT
+    item:
+      material: DIAMOND_SWORD
+    price:
+      buy: 2800
+  23:
+    type: PRODUCT
+    item:
+      material: DIAMOND_PICKAXE
+    price:
+      buy: 4200
+  32:
+    type: PRODUCT
+    item:
+      material: DIAMOND_SHOVEL
+    price:
+      buy: 1400
+  41:
+    type: PRODUCT
+    item:
+      material: DIAMOND_AXE
+    price:
+      buy: 4200
+  16:
+    type: CATEGORY
+    item:
+      material: DIAMOND_CHESTPLATE
+      display_name: "&l防具&その他"
+    category: armor
+  43:
+    type: CATEGORY
+    item:
+      material: BARRIER
+      display_name: "&c戻る"
+    category: main

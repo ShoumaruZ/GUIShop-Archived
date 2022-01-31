@@ -1,0 +1,99 @@
+name: block/stone
+elements:
+  10:
+    type: PRODUCT
+    item:
+      material: STONE
+    price:
+      buy: 10
+      sell: 5
+  11:
+    type: PRODUCT
+    item:
+      material: DEEPSLATE
+    price:
+      buy: 10
+      sell: 5
+  12:
+    type: PRODUCT
+    item:
+      material: GRANITE
+    price:
+      buy: 10
+      sell: 5
+  13:
+    type: PRODUCT
+    item:
+      material: DIORITE
+    price:
+      buy: 10
+      sell: 5
+  14:
+    type: PRODUCT
+    item:
+      material: ANDESITE
+    price:
+      buy: 10
+      sell: 5
+  19:
+    type: PRODUCT
+    item:
+      material: COBBLESTONE
+    price:
+      buy: 10
+      sell: 5
+  20:
+    type: PRODUCT
+    item:
+      material: COBBLED_DEEPSLATE
+    price:
+      buy: 10
+      sell: 5
+  16:
+    type: PRODUCT
+    item:
+      material: SANDSTONE
+    price:
+      buy: 10
+      sell: 5
+  25:
+    type: PRODUCT
+    item:
+      material: RED_SANDSTONE
+    price:
+      buy: 10
+      sell: 5
+  37:
+    type: PRODUCT
+    item:
+      material: GLASS
+    price:
+      buy: 20
+      sell: 10
+  38:
+    type: PRODUCT
+    item:
+      material: BRICKS
+    price:
+      buy: 30
+      sell: 15
+  39:
+    type: PRODUCT
+    item:
+      material: SMOOTH_STONE
+    price:
+      buy: 20
+      sell: 10
+  40:
+    type: PRODUCT
+    item:
+      material: OBSIDIAN
+    price:
+      buy: 50
+      sell: 30
+  43:
+    type: CATEGORY
+    item:
+      material: BARRIER
+      display_name: "&c戻る"
+    category: block

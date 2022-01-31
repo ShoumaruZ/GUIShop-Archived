@@ -1,4 +1,15 @@
-name: OfficialShop
-main: fishnetwork.officialshop.Main
+name: GUIShop
+main: fishnetwork.guishop.Main
+depend: ["Vault"]
 version: "1.0.0"
-api: "1.0.0"
+api-version: 1.18
+commands:
+  shop:
+    description: 公式SHOPを開きます
+    permission: guishop.command.shop
+permissions:
+  guishop.command:
+    description: Commands permission
+    default: true
+    children:
+      guishop.command.shop: true

@@ -4,11 +4,20 @@ plugins {
     id("com.github.johnrengelman.shadow") version "5.2.0"
 }
 
-group = "OfficialShop"
+group = "GUIShop"
 version = "1.0.0"
 
 repositories {
     mavenCentral()
+    maven {
+        url = uri("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
+    }
+    maven {
+        url = uri("https://repo.aikar.co/content/groups/aikar/")
+    }
+    maven {
+        url = uri("https://jitpack.io")
+    }
     flatDir {
         dirs("lib")
     }
@@ -16,10 +25,10 @@ repositories {
 
 dependencies{
     annotationProcessor("org.projectlombok", "lombok", "1.18.22")
-    compileOnly("org.powernukkit", "powernukkit", "1.5.1.0-PN")
-    compileOnly("fishnetwork.userapi", "UserAPI", "1.0.0")
+    implementation("com.github.stefvanschie.inventoryframework", "IF", "0.10.4")
+    compileOnly("org.spigotmc", "spigot-api", "1.18-R0.1-SNAPSHOT")
     compileOnly("org.projectlombok", "lombok", "1.18.22")
-    compileOnly("ru.nukkitx", "FormAPI", "1.0.9")
+    compileOnly("com.github.MilkBowl", "VaultAPI", "1.7")
 }
 
 tasks{

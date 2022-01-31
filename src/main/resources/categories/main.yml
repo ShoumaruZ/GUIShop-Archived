@@ -1,0 +1,44 @@
+name: main
+elements:
+  10:
+    type: CATEGORY
+    item:
+      material: DIAMOND_SWORD
+      display_name: "&l武器&道具"
+    category: weapon
+  12:
+    type: CATEGORY
+    item:
+      material: GRASS_BLOCK
+      display_name: "&lブロック"
+    category: block
+  14:
+    type: CATEGORY
+    item:
+      material: DIAMOND
+      display_name: "&l鉱石"
+    category: ore
+  16:
+    type: CATEGORY
+    item:
+      material: WHEAT
+      display_name: "&l農業"
+    category: farm
+  28:
+    type: CATEGORY
+    item:
+      material: COOKED_CHICKEN
+      display_name: "&l食糧"
+    category: food
+  30:
+    type: CATEGORY
+    item:
+      material: WHITE_DYE
+      display_name: "&l染料"
+    category: dye
+  32:
+    type: CATEGORY
+    item:
+      material: ENDER_CHEST
+      display_name: "&lレアアイテム"
+    category: rare_item

@@ -1,0 +1,32 @@
+name: block/end
+elements:
+  10:
+    type: PRODUCT
+    item:
+      material: END_STONE
+    price:
+      buy: 15
+  11:
+    type: PRODUCT
+    item:
+      material: PURPUR_BLOCK
+    price:
+      buy: 30
+  12:
+    type: PRODUCT
+    item:
+      material: PURPUR_PILLAR
+    price:
+      buy: 30
+  16:
+    type: PRODUCT
+    item:
+      material: END_ROD
+    price:
+      buy: 50
+  43:
+    type: CATEGORY
+    item:
+      material: BARRIER
+      display_name: "&c戻る"
+    category: block

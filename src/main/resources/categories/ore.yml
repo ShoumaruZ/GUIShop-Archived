@@ -1,0 +1,134 @@
+name: ore
+elements:
+  10:
+    type: PRODUCT
+    item:
+      material: COAL
+    price:
+      buy: 20
+      sell: 10
+  19:
+    type: PRODUCT
+    item:
+      material: COAL_BLOCK
+    price:
+      buy: 160
+      sell: 100
+  11:
+    type: PRODUCT
+    item:
+      material: REDSTONE
+    price:
+      buy: 30
+      sell: 15
+  20:
+    type: PRODUCT
+    item:
+      material: REDSTONE_BLOCK
+    price:
+      buy: 240
+      sell: 150
+  12:
+    type: PRODUCT
+    item:
+      material: LAPIS_LAZULI
+    price:
+      buy: 50
+      sell: 25
+  21:
+    type: PRODUCT
+    item:
+      material: LAPIS_BLOCK
+    price:
+      buy: 400
+      sell: 250
+  13:
+    type: PRODUCT
+    item:
+      material: COPPER_INGOT
+    price:
+      buy: 200
+      sell: 100
+  22:
+    type: PRODUCT
+    item:
+      material: COPPER_BLOCK
+    price:
+      buy: 1600
+      sell: 1000
+  14:
+    type: PRODUCT
+    item:
+      material: IRON_INGOT
+    price:
+      buy: 300
+      sell: 150
+  23:
+    type: PRODUCT
+    item:
+      material: IRON_BLOCK
+    price:
+      buy: 2400
+      sell: 1500
+  15:
+    type: PRODUCT
+    item:
+      material: GOLD_INGOT
+    price:
+      buy: 400
+      sell: 200
+  24:
+    type: PRODUCT
+    item:
+      material: GOLD_BLOCK
+    price:
+      buy: 3200
+      sell: 2000
+  16:
+    type: PRODUCT
+    item:
+      material: DIAMOND
+    price:
+      buy: 1400
+      sell: 700
+  25:
+    type: PRODUCT
+    item:
+      material: DIAMOND_BLOCK
+    price:
+      buy: 11200
+      sell: 7000
+  28:
+    type: PRODUCT
+    item:
+      material: EMERALD
+    price:
+      buy: 2000
+      sell: 1000
+  37:
+    type: PRODUCT
+    item:
+      material: EMERALD_BLOCK
+    price:
+      buy: 16000
+      sell: 10000
+  40:
+    type: PRODUCT
+    item:
+      material: QUARTZ
+    price:
+      buy: 15
+      sell: 10
+  41:
+    type: PRODUCT
+    item:
+      material: AMETHYST_SHARD
+    price:
+      buy: 300
+      sell: 150
+  43:
+    type: CATEGORY
+    item:
+      material: BARRIER
+      display_name: "&c戻る"
+    category: main
