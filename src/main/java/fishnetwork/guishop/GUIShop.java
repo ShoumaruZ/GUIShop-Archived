@@ -38,8 +38,14 @@ public final class GUIShop {
 
     public GUIShop(JavaPlugin plugin) {
         this.plugin = plugin;
-        setupConfig();
-        setupCommand();
+        plugin.saveDefaultConfig();
+        plugin.getCommand("shop").setExecutor(new ShopCommand(this));
+        try {
+            FileUtil.copyFileFromJar(getClass(), "messages.yml", plugin.getDataFolder(), false);
+            FileUtil.copyFolderFromJar(getClass(), "categories", plugin.getDataFolder(), false);
+        }catch(IOException exception) {
+            exception.printStackTrace();
+        }
         RegisteredServiceProvider<Economy> service = plugin.getServer().getServicesManager().getRegistration(Economy.class);
         language = new Language(YamlConfiguration.loadConfiguration(new File(plugin.getDataFolder(), "messages.yml")));
         settings = new Settings(plugin.getConfig());
@@ -69,22 +75,6 @@ public final class GUIShop {
                 mainCategory = category;
             }
         }
-    }
-
-
-    private void setupConfig() {
-        plugin.saveDefaultConfig();
-        try {
-            FileUtil.copyFileFromJar(getClass(), "messages.yml", plugin.getDataFolder(), false);
-            FileUtil.copyFolderFromJar(getClass(), "categories", plugin.getDataFolder(), false);
-        }catch(IOException exception) {
-            exception.printStackTrace();
-        }
-    }
-
-
-    private void setupCommand() {
-        plugin.getCommand("shop").setExecutor(new ShopCommand(this));
     }
 
 
